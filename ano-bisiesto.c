@@ -1,3 +1,12 @@
+/*
+Crea un algoritmo que nos ayude a determinar si el ano ingresado por el 
+usuario es bisiesto o no.
+CONSIDERACIONES PARA ANO BISIESTO:
+    - Numero de 4 cifras
+    - Son multiplos de 4 pero no multiplos de 100
+    - Son muliplos de 400
+*/
+
 #include <stdio.h>
 
 int getDate();
@@ -25,6 +34,7 @@ int main() {
     return 0;
 }
 
+//funcion para pedir datos al usuario
 int getDate() {
     int anio;
     printf("Ingrese el anio a evaluar: ");
@@ -32,6 +42,7 @@ int getDate() {
     return anio;
 }
 
+//funcion para verificar si el anio es bisiesto
 const char* anioBisiesto(int anio) {
     if (anio % 400 == 0) {
         return "El anio es bisiesto.";
