@@ -1,0 +1,29 @@
+$\displaystyle \mathbf{ \int 
+        \frac{e^{x} - 1}{e^{x} + 1}
+    \,dx}$ 
+\nopagebreak
+\begin{align*}
+\int \frac{e^{x} - 1}{e^{x} + 1}\, dx
+&= \int \left(\frac{e^{x} + 1}{e^{x} + 1} - \frac{2}{e^{x} + 1}\right) dx \\[6pt]
+&= \int 1 - \frac{2}{e^{x} + 1}\, dx\\[6pt]
+\text{Sustituyendo: } &u = e^{x} 
+\;\;\Rightarrow\; du = e^{x}\, dx\\[6pt]
+\int 1 - \frac{2}{e^{x} + 1}\, dx
+&= x - 2\int \frac{1}{u \left(u + 1\right)} \, du \\[6pt]
+&= x - 2\int \frac{1}{\left(\frac{1}{u} + 1\right) u^{2}} \, du \\[6pt]
+\text{Sustituyendo: } &v = \frac{1}{u} + 1
+\;\;\Rightarrow\; dv = -\frac{1}{u^{2}}\, du\\[6pt]
+x+ 2\int \frac{1}{\left(\frac{1}{u} + 1\right) u^{2}} \, du
+&= x + 2\int \frac{1}{v} \, dv \\[6pt]
+&= x+2\ln\left|v\right|\\[6pt]
+&= x+2\ln\left|\frac{1}{e^{x}}+1\right|+ C\\[6pt]
+&= x+2\ln\left|\frac{1+e^{x}}{e^{x}}\right|+ C\\[6pt]
+&= x+2\ln\left(1+e^{x}\right)- 2 \ln\left(e^{x}\right)+ C\\[6pt]
+&= 2\ln\left(1+e^{x}\right)- x + C\\[6pt]
+\end{align*}
+\[
+\boxed{\displaystyle \int
+    \frac{e^{x} - 1}{e^{x} + 1}\,dx 
+    = 2 \ln\left(1+e^{x}\right)- x + C\\[6pt]
+}
+\]  

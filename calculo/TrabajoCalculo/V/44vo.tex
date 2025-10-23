@@ -1,0 +1,28 @@
+$\displaystyle \mathbf{\int \frac{dx}{x^{2}\sqrt{x^{2}-7}}}$
+
+\nopagebreak
+\begin{align*}
+\text{Sustitución trigonométrica: } 
+&x = \sqrt{7}\sec\theta, 
+\quad dx = \sqrt{7}\sec\theta\tan\theta\,d\theta. \\[4pt]
+\text{Entonces } 
+&\sqrt{x^{2}-7} = \sqrt{7\tan^{2}\theta} = \sqrt{7}\tan\theta. \\[4pt]
+\text{Sustituyendo: } 
+&\int \frac{dx}{x^{2}\sqrt{x^{2}-7}}
+= \int \frac{\sqrt{7}\sec\theta\tan\theta}
+{7\sec^{2}\theta\sqrt{7}\tan\theta}\,d\theta
+= \tfrac{1}{7}\int \cos\theta\,d\theta. \\[4pt]
+\text{Integrando: } 
+&\tfrac{1}{7}\int \cos\theta\,d\theta 
+= \tfrac{1}{7}\sin\theta + C. \\[4pt]
+\text{Del triángulo: } 
+&\sin\theta = \frac{\sqrt{x^{2}-7}}{x}. \\[4pt]
+\text{Sustituyendo de nuevo: } 
+&I_{44} = \tfrac{1}{7}\frac{\sqrt{x^{2}-7}}{x} + C.
+\end{align*}
+
+$$
+\boxed{\displaystyle 
+I_{44} = \frac{\sqrt{x^{2}-7}}{7x} + C}
+$$
+

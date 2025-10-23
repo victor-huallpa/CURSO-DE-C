@@ -1,0 +1,20 @@
+$\displaystyle \mathbf{ \int 
+        \frac{2x^{3}}{x^{2} - 4}
+    \,dx}$ 
+
+\begin{align*}
+\text{Sustituyendo: } &u = x^{2} - 4 
+\;\;\Rightarrow\; du = 2x\,dx\\[6pt]
+\int \frac{2x^{3}}{x^{2} - 4}\,dx
+&= \, \int \frac{u + 4}{u} \, du \\[6pt]
+&= \int 1 + \frac{4}{u}du \\[6pt]
+&= u + 4 \ln\left(u\right)\\[6pt]
+&= x^{2} - 4 + 4 \ln\left(\left|x^{2} - 4\right|\right) + C\\[6pt]
+&= 4 \ln\left(\left|x^{2} - 4\right|\right) + x^{2} + C
+\end{align*}
+\[
+\boxed{\displaystyle 
+    \int \frac{2x^{3}}{x^{2} - 4}\,dx 
+    = 4 \ln\left(\left|x^{2} - 4\right|\right) + x^{2} + C
+}
+\]

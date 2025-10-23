@@ -1,0 +1,65 @@
+$
+\displaystyle \mathbf{\int \mathrm{e}^{\frac{3}{2}x}\cos\!\left(\frac{5}{3}x\right)\,dx}
+$
+
+\nopagebreak
+\begin{align*}
+\text{Operando: } 
+&\text{Sea } I = \int \mathrm{e}^{ax}\cos(bx)\,dx, \\[4pt]
+&\text{con } a=\tfrac{3}{2},\; b=\tfrac{5}{3}. \\[6pt]
+&\text{Aplicaremos integración por partes dos veces para hallar } I. \\[6pt]
+\text{Primera integración por partes: } &
+\begin{cases}
+u = \mathrm{e}^{ax} &\Rightarrow du = a\,\mathrm{e}^{ax}\,dx,\\[3pt]
+dv = \cos(bx)\,dx &\Rightarrow v = \dfrac{\sin(bx)}{b},
+\end{cases} \\[6pt]
+\Rightarrow\; I
+&= \mathrm{e}^{ax}\frac{\sin(bx)}{b}
+- \frac{a}{b}\int \mathrm{e}^{ax}\sin(bx)\,dx. \\[6pt]
+\text{Sea } &J=\int \mathrm{e}^{ax}\sin(bx)\,dx. \\[6pt]
+\text{Segunda integración por partes: } &
+\begin{cases}
+u = \mathrm{e}^{ax} &\Rightarrow du = a\,\mathrm{e}^{ax}\,dx,\\[3pt]
+dv = \sin(bx)\,dx &\Rightarrow v = -\dfrac{\cos(bx)}{b},
+\end{cases} \\[6pt]
+\Rightarrow\; J
+&= -\mathrm{e}^{ax}\frac{\cos(bx)}{b}
++ \frac{a}{b}\int \mathrm{e}^{ax}\cos(bx)\,dx \\[6pt]
+&= -\mathrm{e}^{ax}\frac{\cos(bx)}{b} + \frac{a}{b}\,I. \\[6pt]
+\text{Sustituyendo } J \text{ en } I: & \\[6pt]
+I
+&= \mathrm{e}^{ax}\frac{\sin(bx)}{b}
+- \frac{a}{b}\!\left( -\mathrm{e}^{ax}\frac{\cos(bx)}{b}
++ \frac{a}{b}I \right) \\[6pt]
+&= \mathrm{e}^{ax}\frac{\sin(bx)}{b}
++ \mathrm{e}^{ax}\frac{a\cos(bx)}{b^{2}}
+- \frac{a^{2}}{b^{2}}I. \\[6pt]
+\text{Agrupando términos en } I: & \\[6pt]
+I\!\left(1 + \frac{a^{2}}{b^{2}}\right)
+&= \mathrm{e}^{ax}\!\left(\frac{\sin(bx)}{b}
++ \frac{a\cos(bx)}{b^{2}}\right), \\[6pt]
+\Rightarrow\;
+I
+&= \mathrm{e}^{ax}\frac{b\sin(bx) + a\cos(bx)}{a^{2}+b^{2}}.
+\end{align*}
+
+$$
+\text{Sustituyendo } a=\tfrac{3}{2},\; b=\tfrac{5}{3},
+\quad a^{2}+b^{2}=\tfrac{9}{4}+\tfrac{25}{9}=\tfrac{181}{36}.
+$$
+
+$$
+\Rightarrow\;
+\int \mathrm{e}^{\frac{3}{2}x}\cos\!\left(\frac{5}{3}x\right)\,dx
+= \mathrm{e}^{\frac{3}{2}x}\,
+\frac{\tfrac{5}{3}\sin\!\left(\tfrac{5}{3}x\right)
++\tfrac{3}{2}\cos\!\left(\tfrac{5}{3}x\right)}{\tfrac{181}{36}} + C.
+$$
+
+$$
+\boxed{\displaystyle 
+\int \mathrm{e}^{\frac{3}{2}x}\cos\!\left(\frac{5}{3}x\right)\,dx
+= \mathrm{e}^{\frac{3}{2}x}\!\left(
+\frac{54}{181}\cos\!\left(\tfrac{5}{3}x\right)
++ \frac{60}{181}\sin\!\left(\tfrac{5}{3}x\right)\right) + C}
+$$

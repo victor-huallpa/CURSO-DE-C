@@ -1,0 +1,33 @@
+$\displaystyle \mathbf{\int \tan^{3}\!(x)\,\sec^{5/2}\!(x)\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } &
+\tan^{3}x = (\sec^{2}x - 1)\tan x. \\[6pt]
+\text{Entonces: } &
+\tan^{3}x\,\sec^{5/2}x
+= \tan x\,(\sec^{9/2}x - \sec^{5/2}x). \\[6pt]
+\text{Sustitución: } &
+u = \sec x \;\Rightarrow\; du = \sec x\tan x\,dx 
+\;\Rightarrow\; \tan x\,dx = \frac{du}{u}. \\[6pt]
+\text{Así: } &
+\int \tan^{3}x\,\sec^{5/2}x\,dx
+= \int (u^{7/2} - u^{3/2})\,du. \\[6pt]
+\text{Integramos: } &
+\int u^{7/2}du = \frac{2}{9}u^{9/2}, \quad
+\int u^{3/2}du = \frac{2}{5}u^{5/2}. \\[6pt]
+\text{Sustituyendo: } &
+\int \tan^{3}x\,\sec^{5/2}x\,dx
+= \frac{2}{9}\sec^{9/2}x - \frac{2}{5}\sec^{5/2}x + C. \\[8pt]
+\text{Factorizando } \frac{2}{45}\sec^{5/2}x: &
+\frac{2}{9}\sec^{9/2}x - \frac{2}{5}\sec^{5/2}x
+= \frac{2}{45}\sec^{5/2}x\,(5\sec^{2}x - 9) + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+\int \tan^{3}\!(x)\,\sec^{5/2}\!(x)\,dx
+= \frac{2\,\sec^{5/2}\!(x)\,\big(5\sec^{2}\!(x) - 9\big)}{45} + C}
+$$

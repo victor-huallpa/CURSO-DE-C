@@ -1,0 +1,38 @@
+$\displaystyle \mathbf{\int x\sqrt{x^{4}+2x^{2}-1}\,dx}$
+
+\nopagebreak
+$$
+\text{Sea } u = x^{2} \Rightarrow du = 2x\,dx \Rightarrow x\,dx = \tfrac{1}{2}du.
+$$
+$$
+\Rightarrow\; \int x\sqrt{x^{4}+2x^{2}-1}\,dx
+= \tfrac{1}{2}\int \sqrt{u^{2}+2u-1}\,du.
+$$
+$$
+\text{Completamos el cuadrado: } u^{2}+2u-1 = (u+1)^{2} - 2.
+$$
+$$
+\text{Sea } v = u + 1 \Rightarrow dv = du.
+$$
+$$
+\Rightarrow\; \tfrac{1}{2}\int \sqrt{v^{2}-2}\,dv.
+$$
+$$
+\text{Usamos la fórmula: } 
+\int \sqrt{v^{2}-a^{2}}\,dv
+= \tfrac{1}{2}\big(v\sqrt{v^{2}-a^{2}} - a^{2}\ln|v+\sqrt{v^{2}-a^{2}}|\big) + C.
+$$
+$$
+\text{Aplicando con } a^{2}=2:
+\quad \tfrac{1}{4}\big(v\sqrt{v^{2}-2} - 2\ln|v+\sqrt{v^{2}-2}|\big) + C.
+$$
+$$
+\text{Regresando a } x: \quad v = u + 1 = x^{2} + 1.
+$$
+$$
+\boxed{
+I_{48} =
+\tfrac{1}{4}\Big[(x^{2}+1)\sqrt{x^{4}+2x^{2}-1}
+- \sqrt{2}\,\ln\!\big|x^{2}+1+\sqrt{x^{4}+2x^{2}-1}\big|\Big] + C.
+}
+$$

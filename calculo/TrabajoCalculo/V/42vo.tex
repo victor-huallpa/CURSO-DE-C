@@ -1,0 +1,37 @@
+$\displaystyle \mathbf{\int \frac{1}{x\sqrt{4x^{2}-9}}\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } &
+\text{Usamos la sustitución trigonométrica } x=\tfrac{3}{2}\sec\theta. \\[6pt]
+&\text{Entonces } \sec\theta=\tfrac{2x}{3},\quad 
+\sqrt{4x^{2}-9}=3\tan\theta, \\[4pt]
+&dx=\tfrac{3}{2}\sec\theta\tan\theta\,d\theta. \\[8pt]
+\text{Sustituyendo en la integral: } &
+\int \frac{1}{x\sqrt{4x^{2}-9}}\,dx
+= \int \frac{1}{\big(\tfrac{3}{2}\sec\theta\big)\cdot(3\tan\theta)}
+\cdot \tfrac{3}{2}\sec\theta\tan\theta\,d\theta \\[6pt]
+&\quad= \int \frac{\tfrac{3}{2}\sec\theta\tan\theta}{\tfrac{9}{2}\sec\theta\tan\theta}\,d\theta
+= \int \tfrac{1}{3}\,d\theta. \\[8pt]
+\text{Por tanto: } &
+\int \frac{1}{x\sqrt{4x^{2}-9}}\,dx = \tfrac{1}{3}\theta + C.
+\end{aligned}
+$$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Volviendo a } x: &\quad \theta=\arctan\!\!\left(\frac{\sqrt{4x^{2}-9}}{3}\right)
+\quad\text{o bien }\theta=\operatorname{arcsec}\!\!\left(\frac{2x}{3}\right). \\[6pt]
+\Rightarrow\quad &
+\int \frac{1}{x\sqrt{4x^{2}-9}}\,dx
+= \frac{1}{3}\arctan\!\!\left(\frac{\sqrt{4x^{2}-9}}{3}\right) + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+\int \frac{1}{x\sqrt{4x^{2}-9}}\,dx
+= \frac{1}{3}\arctan\!\!\left(\frac{\sqrt{4x^{2}-9}}{3}\right) + C}
+$$

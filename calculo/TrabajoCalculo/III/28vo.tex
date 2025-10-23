@@ -1,0 +1,37 @@
+$\displaystyle \mathbf{\int x \cdot \frac{\ln\left(x + \sqrt{1 + x^{2}}\right)}{\sqrt{1 + x^{2}}}\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Observamos: } &
+\frac{d}{dx}\sqrt{1+x^{2}}=\frac{x}{\sqrt{1+x^{2}}}. \\[6pt]
+&\text{Sugerimos la sustitución hiperbólica } x=\sinh t. \\[4pt]
+&\text{Entonces } dx=\cosh t\,dt,\quad \sqrt{1+x^{2}}=\cosh t. \\[6pt]
+&\text{Además } \ln\big(x+\sqrt{1+x^{2}}\big)
+= \ln(\sinh t+\cosh t)=\ln(e^{t})=t. \\[8pt]
+\text{La integral queda: } &
+\int x\cdot\frac{\ln(x+\sqrt{1+x^{2}})}{\sqrt{1+x^{2}}}\,dx
+= \int t\cdot\sinh t\,dt. \\[10pt]
+\text{Aplicamos integración por partes: } &
+\int u\,dv = uv - \int v\,du. \\[6pt]
+\text{Elegimos: } &
+u=t,\quad dv=\sinh t\,dt. \\[4pt]
+\text{Entonces: } &
+du=dt,\quad v=\cosh t. \\[6pt]
+\text{Luego: } &
+\int t\sinh t\,dt = t\cosh t - \int \cosh t\,dt
+= t\cosh t - \sinh t + C. \\[10pt]
+\text{Volviendo a } x: &
+t=\operatorname{arsinh}(x),\ \sinh t = x,\ \cosh t=\sqrt{1+x^{2}}. \\[6pt]
+\Rightarrow\quad &
+\int x\cdot\frac{\ln(x+\sqrt{1+x^{2}})}{\sqrt{1+x^{2}}}\,dx
+= \sqrt{1+x^{2}}\,\operatorname{arsinh}(x) - x + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle
+\int x\cdot\frac{\ln(x+\sqrt{1+x^{2}})}{\sqrt{1+x^{2}}}\,dx
+= \sqrt{1+x^{2}}\,\operatorname{arsinh}(x) - x + C
+}
+$$

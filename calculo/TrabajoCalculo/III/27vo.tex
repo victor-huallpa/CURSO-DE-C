@@ -1,0 +1,45 @@
+$\displaystyle \mathbf{\int x\,\log_{10}^{2}(x)\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } &
+\log_{10}(x) = \dfrac{\ln(x)}{\ln(10)} 
+\;\Rightarrow\;
+\log_{10}^{2}(x) = \dfrac{\ln^{2}(x)}{\ln^{2}(10)}. \\[6pt]
+\text{Entonces: } &
+\int x\,\log_{10}^{2}(x)\,dx
+= \dfrac{1}{\ln^{2}(10)}\int x\,\ln^{2}(x)\,dx. \\[6pt]
+\text{De un resultado previo (por partes): } &
+\int x\,\ln^{2}(x)\,dx
+= \dfrac{x^{2}}{2}\ln^{2}(x)
+- \dfrac{x^{2}}{2}\ln(x)
++ \dfrac{x^{2}}{4} + C. \\[6pt]
+\text{Por tanto: } &
+\int x\,\log_{10}^{2}(x)\,dx
+= \dfrac{1}{\ln^{2}(10)}
+\Bigg(
+\dfrac{x^{2}}{2}\ln^{2}(x)
+- \dfrac{x^{2}}{2}\ln(x)
++ \dfrac{x^{2}}{4}
+\Bigg) + C. \\[6pt]
+\text{Sustituyendo } &\ln(x)=\ln(10)\,\log_{10}(x): \\[6pt]
+&\dfrac{x^{2}}{2}\ln^{2}(x)
+= \dfrac{x^{2}}{2}\big(\ln(10)\log_{10}(x)\big)^{2}, \\[3pt]
+&\dfrac{x^{2}}{2}\ln(x)
+= \dfrac{x^{2}}{2}\ln(10)\log_{10}(x). \\[8pt]
+\text{Por tanto, simplificando: } &
+\int x\,\log_{10}^{2}(x)\,dx
+= \dfrac{x^{2}}{2}\log_{10}^{2}(x) \\[4pt]
+&\quad - \dfrac{x^{2}}{2\ln(10)}\log_{10}(x)
++ \dfrac{x^{2}}{4\ln^{2}(10)} + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+\int x\,\log_{10}^{2}(x)\,dx
+= \dfrac{x^{2}}{2}\log_{10}^{2}(x)
+- \dfrac{x^{2}}{2\ln(10)}\log_{10}(x)
++ \dfrac{x^{2}}{4\ln^{2}(10)} + C}
+$$

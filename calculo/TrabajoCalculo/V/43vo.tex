@@ -1,0 +1,30 @@
+$\displaystyle \mathbf{\int \frac{dx}{x\sqrt{4x^{2}+9}}}$
+
+\nopagebreak
+\begin{align*}
+\text{Sustitución trigonométrica: } 
+&x = \tfrac{3}{2}\tan\theta, \quad dx = \tfrac{3}{2}\sec^{2}\theta\,d\theta. \\[4pt]
+\text{Entonces } 
+&\sqrt{4x^{2}+9} = \sqrt{9\tan^{2}\theta + 9} = 3\sec\theta. \\[4pt]
+\text{Sustituyendo: } 
+&\int \frac{dx}{x\sqrt{4x^{2}+9}}
+= \int \frac{\tfrac{3}{2}\sec^{2}\theta}{\tfrac{3}{2}\tan\theta \cdot 3\sec\theta}\,d\theta
+= \tfrac{1}{3}\int \csc\theta\,d\theta. \\[4pt]
+\text{Sabemos que } 
+&\int \csc\theta\,d\theta = -\ln\!\big|\csc\theta+\cot\theta\big| + C
+= \ln\!\big|\tan\tfrac{\theta}{2}\big| + C. \\[4pt]
+\text{Por tanto: } 
+&\int \frac{dx}{x\sqrt{4x^{2}+9}}
+= \tfrac{1}{3}\ln\!\big|\tan\tfrac{\theta}{2}\big| + C. \\[4pt]
+\text{De } \tan\theta = \tfrac{2x}{3} \text{ se sigue que } 
+&\tan\tfrac{\theta}{2} = \tfrac{2x}{\sqrt{4x^{2}+9}+3}. \\[4pt]
+\text{Sustituyendo de nuevo: } 
+&\int \frac{dx}{x\sqrt{4x^{2}+9}}
+= -\tfrac{1}{3}\ln\!\left(\frac{\sqrt{4x^{2}+9}+3}{2x}\right) + C.
+\end{align*}
+
+$$
+\boxed{\displaystyle 
+\int \frac{dx}{x\sqrt{4x^{2}+9}}
+= -\frac{1}{3}\ln\!\left(\frac{\sqrt{4x^{2}+9}+3}{2x}\right) + C}
+$$

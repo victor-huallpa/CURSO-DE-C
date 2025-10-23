@@ -1,0 +1,17 @@
+$\displaystyle \mathbf{\int e^{x}\,2^{e^{x}}\,3^{e^{x}}\,dx}$
+\nopagebreak
+\begin{align*}
+\text{Operando: } &2^{e^{x}}\,3^{e^{x}} = (2\cdot 3)^{e^{x}} = 6^{e^{x}}. \\[6pt]
+\text{Sustituyendo: } &u = e^{x} \;\;\Rightarrow\; du = e^{x}\,dx. \\[6pt]
+\int e^{x}\,2^{e^{x}}\,3^{e^{x}}\,dx
+&= \int 6^{e^{x}}\,e^{x}\,dx = \int 6^{u}\,du \\[6pt]
+\text{Usando } &\int a^{u}\,du = \frac{a^{u}}{\ln a} + C, \\[6pt]
+\int 6^{u}\,du
+&= \frac{6^{u}}{\ln 6} + C \\[6pt]
+&= \frac{6^{e^{x}}}{\ln 6} + C
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int e^{x}\,2^{e^{x}}\,3^{e^{x}}\,dx
+= \frac{6^{e^{x}}}{\ln 6} + C.}
+\]

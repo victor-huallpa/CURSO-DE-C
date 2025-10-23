@@ -1,0 +1,41 @@
+$\displaystyle \mathbf{\int x^{2} \arcsin(x)\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } & \text{Usaremos integración por partes.} \\[4pt]
+& \text{Observamos que } \arcsin(x) \text{ es una buena elección para } u. \\[6pt]
+\text{Sea } &u = \arcsin(x) \Rightarrow du = \frac{1}{\sqrt{1-x^{2}}}\,dx, \\[6pt]
+&dv = x^{2}\,dx \Rightarrow v = \frac{x^{3}}{3}. \\[6pt]
+\text{Aplicamos } &\int u\,dv = uv - \int v\,du: \\[6pt]
+\int x^{2}\arcsin(x)\,dx
+&= \frac{x^{3}}{3}\arcsin(x)
+- \frac{1}{3}\int \frac{x^{3}}{\sqrt{1-x^{2}}}\,dx. \\[6pt]
+\text{Para la integral } &
+\int \frac{x^{3}}{\sqrt{1-x^{2}}}\,dx, \text{ usamos la sustitución } t = 1-x^{2}. \\[4pt]
+&dt = -2x\,dx, \quad x^{3}\,dx = x^{2}\cdot x\,dx = (1-t)\cdot x\,dx. \\[6pt]
+\Rightarrow &
+\int \frac{x^{3}}{\sqrt{1-x^{2}}}\,dx
+= -\tfrac{1}{2}\int \frac{1-t}{\sqrt{t}}\,dt. \\[6pt]
+&= -\tfrac{1}{2}\int (t^{-1/2} - t^{1/2})\,dt
+= -\tfrac{1}{2}\Big( 2t^{1/2} - \tfrac{2}{3}t^{3/2} \Big) + C \\[6pt]
+&= -\sqrt{t} + \tfrac{1}{3}t^{3/2} + C
+= -\sqrt{1-x^{2}} + \tfrac{1}{3}(1-x^{2})^{3/2} + C. \\[6pt]
+\text{Por tanto: } &
+-\tfrac{1}{3}\int \frac{x^{3}}{\sqrt{1-x^{2}}}\,dx
+= \tfrac{1}{3}\sqrt{1-x^{2}} - \tfrac{1}{9}(1-x^{2})^{3/2} + C. \\[6pt]
+\text{Finalmente: } &
+\int x^{2}\arcsin(x)\,dx
+= \frac{x^{3}}{3}\arcsin(x)
++ \frac{1}{3}\sqrt{1-x^{2}}
+- \frac{1}{9}(1-x^{2})^{3/2} + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+\int x^{2}\arcsin(x)\,dx
+= \frac{x^{3}}{3}\arcsin(x)
++ \frac{1}{3}\sqrt{1-x^{2}}
+- \frac{1}{9}(1-x^{2})^{3/2} + C}
+$$

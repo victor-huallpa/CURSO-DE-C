@@ -1,0 +1,27 @@
+$\displaystyle \mathbf{\int \sin^{\frac{3}{2}}(x)\,\cos^{-\frac{11}{2}}(x)\,dx}$
+\nopagebreak
+\[
+\text{Sustitución } t = \tan x \implies dt = \sec^2 x\, dx
+\]
+
+\[
+\sin^{3/2}(x)\cos^{-11/2}(x)\,dx = \tan^{3/2}(x) \sec^4(x)\, dx = \tan^{3/2}(x) (1+\tan^2 x)\, dt
+\]
+
+\[
+\int \tan^{3/2}(x) (1+\tan^2 x)\, dx = \int t^{3/2} (1+t^2)\, dt = \int t^{3/2} + t^{7/2}\, dt
+\]
+
+\[
+\int t^{3/2} + t^{7/2}\, dt = \frac{2 t^{5/2}}{5} + \frac{2 t^{9/2}}{9} = \frac{2 t^{5/2} (5 + 9 t^2)}{45} + C
+\]
+
+\[
+\text{Regresando a } x: t = \tan x
+\]
+
+\[
+\boxed{\displaystyle 
+\int \sin^{3/2}(x)\,\cos^{-11/2}(x)\,dx = \frac{2 \tan^{5/2}(x) \left(5 + 9 \tan^2(x)\right)}{45} + C
+}
+\]

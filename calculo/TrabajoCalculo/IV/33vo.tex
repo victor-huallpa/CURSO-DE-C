@@ -1,0 +1,25 @@
+$\displaystyle \mathbf{\int \sqrt{\frac{1-\sin x}{1+\sin x}}\,dx}$
+\nopagebreak
+\[
+\text{Usamos la identidad: } \frac{1-\sin x}{1+\sin x} = \frac{\cos^2 x}{(1+\sin x)^2} = \left(\frac{\cos x}{1+\sin x}\right)^2
+\]
+\[
+\text{Entonces } \sqrt{\frac{1-\sin x}{1+\sin x}} = \frac{\cos x}{1+\sin x}
+\]
+\[
+\int \sqrt{\frac{1-\sin x}{1+\sin x}}\,dx = \int \frac{\cos x}{1+\sin x}\,dx
+\]
+
+\[
+\text{Sustituimos } t = 1+\sin x \implies dt = \cos x\, dx
+\]
+
+\[
+\int \frac{\cos x}{1+\sin x}\,dx = \int \frac{dt}{t} = \ln|t| + C
+\]
+
+\[
+\boxed{\displaystyle 
+\int \sqrt{\frac{1-\sin x}{1+\sin x}}\,dx = \ln|1+\sin x| + C
+}
+\]

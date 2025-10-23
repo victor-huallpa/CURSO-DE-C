@@ -1,0 +1,35 @@
+$\displaystyle \mathbf{\int x \cdot 3^{x}\,dx}$
+\nopagebreak
+\begin{align*}
+    \text{Operando: } 
+    &\text{Aplicamos la fórmula de integración por partes: } 
+    \\
+    \int u\,dv = uv - \int v\,du. \\[6pt]
+    \text{Sea } 
+    &u = x, \quad dv = 3^{x}\,dx. \\[6pt]
+    \text{Entonces } 
+    &du = dx, \quad v = \int 3^{x}\,dx = \frac{3^{x}}{\ln 3}. \\[6pt]
+    \text{Sustituyendo en la fórmula: } \\[6pt]
+    \int x\cdot 3^{x}\,dx 
+    &= x\cdot \frac{3^{x}}{\ln 3} - \int \frac{3^{x}}{\ln 3}\,dx \\[6pt]
+    &= \frac{x\,3^{x}}{\ln 3} - \frac{1}{\ln 3}\int 3^{x}\,dx \\[6pt]
+    &= \frac{x\,3^{x}}{\ln 3} - \frac{1}{\ln 3}\left(\frac{3^{x}}{\ln 3}\right) + C \\[6pt]
+    &= \frac{3^{x}}{\ln 3}\left(x - \frac{1}{\ln 3}\right) + C
+\end{align*}
+
+\[
+\boxed{\displaystyle 
+\int x\cdot 3^{x}\,dx 
+= \frac{3^{x}}{\ln 3}\left(x - \frac{1}{\ln 3}\right) + C.}
+\]
+
+\nopagebreak
+\begin{align*}
+    \text{Simplificando la expresión final: } 
+    &\frac{3^{x}}{\ln 3}\left(x - \frac{1}{\ln 3}\right)
+    = \frac{3^{x}(x\ln 3 - 1)}{(\ln 3)^{2}}. \\[6pt]
+    \text{Por tanto, la forma mínima es: } 
+    &\boxed{\displaystyle 
+    \int x\cdot 3^{x}\,dx 
+    = \frac{3^{x}(x\ln 3 - 1)}{(\ln 3)^{2}} + C.}
+\end{align*}

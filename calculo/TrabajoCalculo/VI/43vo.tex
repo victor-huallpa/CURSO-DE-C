@@ -1,0 +1,49 @@
+$\displaystyle \mathbf{\int \frac{2x^{2} - 3x - 2}{x^{3} + x^{2} - 2x}\,dx}$
+
+\nopagebreak
+\[
+\text{Factorizamos el denominador:}
+\]
+\[
+x^{3} + x^{2} - 2x = x(x - 1)(x + 2)
+\]
+
+\[
+\text{Planteamos fracciones parciales:}
+\]
+\[
+\frac{2x^{2} - 3x - 2}{x(x - 1)(x + 2)}
+= \frac{A}{x} + \frac{B}{x - 1} + \frac{C}{x + 2}
+\]
+
+\[
+\text{Multiplicamos por el denominador común y comparamos coeficientes:}
+\]
+\[
+2x^{2} - 3x - 2 = A(x - 1)(x + 2) + B x(x + 2) + C x(x - 1)
+\]
+
+\[
+A = 2, \quad B = -1, \quad C = 1
+\]
+
+\[
+\text{Sustituyendo en la integral:}
+\]
+\[
+\int \frac{2x^{2} - 3x - 2}{x^{3} + x^{2} - 2x}\,dx
+= \int\!\left(\frac{2}{x} - \frac{1}{x - 1} + \frac{1}{x + 2}\right)dx
+\]
+
+\[
+\text{Integrando término a término:}
+\]
+\[
+I_{53} = 2\ln|x| - \ln|x - 1| + \ln|x + 2| + C
+\]
+
+\[
+\boxed{\displaystyle
+I_{53} = 2\ln|x + 2| + \ln|x| - \ln|x - 1| + C
+}
+\]

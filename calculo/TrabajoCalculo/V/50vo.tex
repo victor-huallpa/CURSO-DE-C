@@ -1,0 +1,31 @@
+$\displaystyle \mathbf{\int \frac{x\,e^{\arctan x}}{(1+x^{2})^{3/2}}\,dx}$
+
+\nopagebreak
+$$
+\text{Sustitución trigonométrica:}\quad
+t = \arctan x \;\Rightarrow\; x = \tan t,\quad dx = (1+\tan^{2}t)\,dt.
+$$
+$$
+\text{Triángulo: cateto opuesto } x,\; \text{adyacente } 1,\; \text{hipotenusa } \sqrt{1+x^{2}}.
+$$
+$$
+\frac{x\,dx}{(1+x^{2})^{3/2}}
+= \frac{\tan t(1+\tan^{2}t)}{(1+\tan^{2}t)^{3/2}}\,dt
+= \sin t\,dt.
+$$
+$$
+\text{Entonces:}\quad
+\int e^{t}\sin t\,dt
+= \frac{e^{t}}{2}(\sin t - \cos t) + C.
+$$
+$$
+\text{Regresando a } x:\quad
+\sin t = \frac{x}{\sqrt{1+x^{2}}}, \quad
+\cos t = \frac{1}{\sqrt{1+x^{2}}}.
+$$
+$$
+\boxed{
+I_{50} =
+\frac{e^{\arctan x}(x-1)}{2\sqrt{1+x^{2}}} + C.
+}
+$$

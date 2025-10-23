@@ -1,0 +1,54 @@
+$\displaystyle \mathbf{\int \frac{\sin(x)\,\tan(x)}{2+3\sec(x)}\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } &
+\text{Expresamos en } \sin,\cos: \\[4pt]
+&\frac{\sin x\;\tan x}{2+3\sec x}
+= \frac{\sin x\cdot(\sin x/\cos x)}{2+3(1/\cos x)} \\[4pt]
+&\quad= \frac{\sin^{2}x/\cos x}{(2\cos x+3)/\cos x}
+= \frac{\sin^{2}x}{2\cos x+3}. \\[8pt]
+\text{Usamos } &\sin^{2}x = 1-\cos^{2}x \text{ y hacemos la división algebraica:} \\[6pt]
+&\frac{1-\cos^{2}x}{2\cos x+3}
+= \Big(\tfrac{3}{4}-\tfrac{1}{2}\cos x\Big) \;+\; \frac{-5/4}{\,2\cos x+3\,}. \\[8pt]
+\text{Por tanto la integral } I \text{ es:} \\[4pt]
+I &= \int \frac{\sin^{2}x}{2\cos x+3}\,dx
+= \int\Big(\tfrac{3}{4}-\tfrac{1}{2}\cos x\Big)\,dx
+- \tfrac{5}{4}\int \frac{dx}{2\cos x+3}. \\[8pt]
+\text{Evaluamos la parte elemental: } &
+\int\Big(\tfrac{3}{4}-\tfrac{1}{2}\cos x\Big)\,dx
+= \tfrac{3}{4}x - \tfrac{1}{2}\sin x. \\[8pt]
+\text{Para } &\int \frac{dx}{2\cos x+3} \text{ usamos la sustitución } 
+t=\tan\!\tfrac{x}{2}. \\[4pt]
+&\cos x = \frac{1-t^{2}}{1+t^{2}}, \quad dx=\frac{2\,dt}{1+t^{2}}. \\[6pt]
+\text{Entonces: } &
+\int \frac{dx}{2\cos x+3}
+= \int \frac{2\,dt/(1+t^{2})}{\,2\frac{1-t^{2}}{1+t^{2}}+3\,} \\[4pt]
+&\quad= \int \frac{2\,dt}{2(1-t^{2})+3(1+t^{2})}
+= \int \frac{2\,dt}{5+t^{2}} \\[6pt]
+&\quad= \frac{2}{\sqrt{5}}\arctan\!\!\left(\frac{t}{\sqrt{5}}\right) + C \\[4pt]
+&\quad= \frac{2}{\sqrt{5}}\arctan\!\!\left(\frac{\tan(x/2)}{\sqrt{5}}\right) + C.
+\end{aligned}
+$$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Combinando todo: } \\
+I &= \tfrac{3}{4}x - \tfrac{1}{2}\sin x
+- \tfrac{5}{4}\cdot \frac{2}{\sqrt{5}}
+\arctan\!\!\left(\frac{\tan(x/2)}{\sqrt{5}}\right) + C \\[6pt]
+&= \tfrac{3}{4}x - \tfrac{1}{2}\sin x
+- \tfrac{\sqrt{5}}{2}\,
+\arctan\!\!\left(\frac{\tan(x/2)}{\sqrt{5}}\right) + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+\int \frac{\sin(x)\,\tan(x)}{2+3\sec(x)}\,dx
+= \tfrac{3}{4}x - \tfrac{1}{2}\sin x
+- \tfrac{\sqrt{5}}{2}\,
+\arctan\!\!\left(\frac{\tan(x/2)}{\sqrt{5}}\right) + C}
+$$

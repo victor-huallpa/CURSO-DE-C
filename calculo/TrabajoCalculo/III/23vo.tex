@@ -1,0 +1,63 @@
+$
+\displaystyle \mathbf{\int \operatorname{arccot}\!\big(\sqrt{x}\,\big)\,dx}
+$
+
+\nopagebreak
+\begin{align*}
+\text{Operando: } 
+&\text{Hacemos la sustitución: } t=\sqrt{x}\ (\Rightarrow x=t^{2}), \\[4pt]
+&dx=2t\,dt,\quad t\ge0. \\[6pt]
+\text{Entonces: } 
+&\int \operatorname{arccot}\!\big(\sqrt{x}\,\big)\,dx
+= \int \operatorname{arccot}(t)\cdot 2t\,dt \\[4pt]
+&= 2\int t\,\operatorname{arccot}(t)\,dt. \\[8pt]
+\text{Aplicamos integración por partes: } 
+&\int u\,dv = uv - \int v\,du. \\[6pt]
+\text{Sea } 
+&u=\operatorname{arccot}(t), \quad dv=2t\,dt. \\[6pt]
+\text{Entonces: } 
+&du = -\frac{1}{1+t^{2}}\,dt, \quad v=\int 2t\,dt = t^{2}. \\[6pt]
+\text{Sustituyendo: } \\[4pt]
+2\int t\,\operatorname{arccot}(t)\,dt
+&= u v - \int v\,du \\[4pt]
+&= t^{2}\operatorname{arccot}(t)
+- \int t^{2}\!\left(-\frac{1}{1+t^{2}}\right)\!dt \\[4pt]
+&= t^{2}\operatorname{arccot}(t)
++ \int \frac{t^{2}}{1+t^{2}}\,dt. \\[6pt]
+\text{Observa que: } 
+&\dfrac{t^{2}}{1+t^{2}} = 1 - \dfrac{1}{1+t^{2}}. \\[6pt]
+\text{Por tanto: } \\[4pt]
+2\int t\,\operatorname{arccot}(t)\,dt
+&= t^{2}\operatorname{arccot}(t)
++ \int\!\left(1 - \frac{1}{1+t^{2}}\right)\!dt \\[4pt]
+&= t^{2}\operatorname{arccot}(t)
++ t - \arctan(t) + C. \\[8pt]
+\text{Regresando a } x\ (t=\sqrt{x}): \\[6pt]
+\int \operatorname{arccot}\!\big(\sqrt{x}\,\big)\,dx
+&= x\,\operatorname{arccot}\!\big(\sqrt{x}\,\big)
++ \sqrt{x} - \arctan\!\big(\sqrt{x}\,\big) + C.
+\end{align*}
+
+$$
+\boxed{\displaystyle 
+\int \operatorname{arccot}\!\big(\sqrt{x}\,\big)\,dx
+= x\,\operatorname{arccot}\!\big(\sqrt{x}\,\big)
++ \sqrt{x} - \arctan\!\big(\sqrt{x}\,\big) + C}
+$$
+
+\nopagebreak
+\begin{align*}
+\text{Forma equivalente (usando } 
+\arctan t=\tfrac{\pi}{2}-\operatorname{arccot} t,\ t\ge0\text{):} \\[6pt]
+x\,\operatorname{arccot}\!\big(\sqrt{x}\,\big)
++ \sqrt{x} - \arctan\!\big(\sqrt{x}\,\big)
+&= x\,\operatorname{arccot}t + t + \big(\operatorname{arccot}t - \tfrac{\pi}{2}\big) + C \\[4pt]
+&= (x+1)\operatorname{arccot}\!\big(\sqrt{x}\,\big) + \sqrt{x} + C'.
+\end{align*}
+
+$$
+\boxed{\displaystyle 
+\int \operatorname{arccot}\!\big(\sqrt{x}\,\big)\,dx
+= (x+1)\operatorname{arccot}\!\big(\sqrt{x}\,\big)
++ \sqrt{x} + C}
+$$

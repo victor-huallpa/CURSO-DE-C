@@ -1,0 +1,28 @@
+$\displaystyle \mathbf{\int \frac{\ln(\sin x)}{\cos^{2} x}\,dx}$
+\nopagebreak
+\begin{align*}
+    &\text{Sustituimos } t = \tan x \implies dt = \frac{dx}{\cos^2 x}, \\[2pt]
+    &\text{entonces la integral se convierte en: } 
+    \int \frac{\ln(\sin x)}{\cos^2 x}\,dx = \int \ln(\sin x)\, dt, \\[2pt]
+    &\text{y usamos } \sin x = \frac{t}{\sqrt{1+t^2}} \implies \ln(\sin x) = \ln t - \frac{1}{2} \ln(1+t^2), \\[2pt]
+    &\text{entonces: } \int \ln(\sin x)\, dt = \int \ln t\, dt - \frac{1}{2} \int \ln(1+t^2)\, dt.
+\end{align*}
+
+\[
+\text{Sabemos que } \int \ln t\, dt = t \ln t - t, \quad \int \ln(1+t^2)\, dt = t \ln(1+t^2) - 2t + 2\arctan t
+\]
+
+\begin{align*}
+    \int \frac{\ln(\sin x)}{\cos^2 x}\,dx 
+    &= \big(t \ln t - t\big) - \frac{1}{2}\big(t \ln(1+t^2) - 2t + 2\arctan t\big) + C \\[2pt]
+    &= t \ln t - \frac{1}{2} t \ln(1+t^2) - \arctan t + C \\[2pt]
+    &= \tan x \ln(\tan x) - \frac{1}{2} \tan x \ln(1+\tan^2 x) - x + C \\[2pt]
+    &= \tan x \ln(\tan x) - \tan x \ln(\sec x) - x + C \\[2pt]
+    &= \tan x \ln(\sin x) - x + C
+\end{align*}
+
+\[
+\boxed{\displaystyle 
+\int \frac{\ln(\sin x)}{\cos^{2} x}\,dx = \tan x \ln(\sin x) - x + C
+}
+\]

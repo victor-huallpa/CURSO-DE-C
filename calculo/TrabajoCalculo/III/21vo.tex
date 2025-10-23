@@ -1,0 +1,25 @@
+$\displaystyle \mathbf{\int \ln^{2}(x)\,dx}$
+\nopagebreak
+\begin{align*}
+    \text{Operando: } 
+    &\text{Sea } u = \ln^{2}(x), \quad dv = dx. \\[6pt]
+    \text{Entonces } 
+    &du = 2\ln(x)\cdot \frac{1}{x}\,dx, \quad v = x. \\[6pt]
+    \text{Por la fórmula de integración por partes: } 
+    &\int u\,dv = uv - \int v\,du. \\[6pt]
+    \int \ln^{2}(x)\,dx 
+    &= x\ln^{2}(x) - \int x\cdot 2\ln(x)\cdot \frac{1}{x}\,dx \\[6pt]
+    &= x\ln^{2}(x) - 2\int \ln(x)\,dx. \\[6pt]
+    \text{Sabemos que } 
+    &\int \ln(x)\,dx = x\ln(x) - x + C. \\[6pt]
+    \therefore\;
+    \int \ln^{2}(x)\,dx 
+    &= x\ln^{2}(x) - 2\left[x\ln(x) - x\right] + C \\[6pt]
+    &= x\ln^{2}(x) - 2x\ln(x) + 2x + C
+\end{align*}
+
+\[
+\boxed{\displaystyle 
+\int \ln^{2}(x)\,dx 
+= x\ln^{2}(x) - 2x\ln(x) + 2x + C.}
+\]

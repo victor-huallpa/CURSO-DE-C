@@ -1,0 +1,22 @@
+$\displaystyle \mathbf{ \int 
+        \frac{x\,dx}{2 + \sqrt{1 + x}}
+    }$ 
+\nopagebreak
+\begin{align*}
+\text{Sustituyendo: } u &= \sqrt{x + 1} + 2\\[6pt]
+du &= \frac{1}{2 \sqrt{x + 1}}\, dx\\[6pt]
+x &= \left(u - 2\right)^{2} - 1\\[6pt]
+\int \frac{x\,dx}{2 + \sqrt{1 + x}}
+&= 2 \int \frac{\left(\left(u - 2\right)^{2} - 1\right) \left(u - 2\right)}{u} \, du\\[6pt]
+&= 2\int u^{2} - 6u - \frac{6}{u} + 11\, du \\[6pt]
+&= -12 \ln u + \frac{2u^{3}}{3} - 6u^{2} + 22u\\[6pt]
+&= -12 \ln\left(\sqrt{x + 1} + 2\right) + \frac{2 \left(\sqrt{x + 1} + 2\right)^{3}}{3} - 6 \left(\sqrt{x + 1} + 2\right)^{2}\\[6pt]
+&\;\;\;\; + 22 \left(\sqrt{x + 1} + 2\right) + C\\[6pt]
+&= \frac{2 \left(-18 \ln\left(\sqrt{x + 1} + 2\right) + \sqrt{x + 1} \left(x + 10\right) - 3x\right)}{3} + C\\[6pt]
+\end{align*}
+\[
+\boxed{\displaystyle \int
+    \frac{x\,dx}{2 + \sqrt{1 + x}} 
+    = = \frac{2 \left(-18 \ln\left(\sqrt{x + 1} + 2\right) + \sqrt{x + 1} \left(x + 10\right) - 3x\right)}{3} + C
+}
+\]  

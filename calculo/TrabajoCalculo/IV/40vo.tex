@@ -1,0 +1,32 @@
+$\displaystyle \mathbf{\int \sec^{4}(x)\, \csc^{4}(x)\, dx}$
+\nopagebreak
+\[
+\text{Usamos la identidad } \sec x \csc x = \frac{1}{\sin x \cos x} = \frac{2}{\sin(2x)}, 
+\quad \sec^4 x \csc^4 x = \frac{16}{\sin^4(2x)}
+\]
+
+\[
+\int \sec^4(x) \csc^4(x)\, dx = \int \frac{16}{\sin^4(2x)}\, dx = 16 \int \csc^4(2x)\, dx
+\]
+
+\[
+\text{Sustitución } u = 2x \implies du = 2 dx \implies dx = \frac{du}{2}
+\]
+
+\[
+16 \int \csc^4(2x)\, dx = 16 \int \csc^4(u) \cdot \frac{du}{2} = 8 \int \csc^4(u)\, du
+\]
+
+\[
+\int \csc^4(u)\, du = -\frac{\cos(2u)}{3 \sin^3(u)} - \frac{1}{\sin u} + C \quad \text{(usando fórmula estándar)}
+\]
+
+\[
+\text{Regresando a } x \implies u = 2x
+\]
+
+\[
+\boxed{\displaystyle 
+\int \sec^4(x) \csc^4(x)\, dx = \frac{4 \csc^3(2x) (\cos(6x) - 3 \cos(2x))}{3} + C
+}
+\]

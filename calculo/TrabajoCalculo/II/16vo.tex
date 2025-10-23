@@ -1,0 +1,26 @@
+$\displaystyle \mathbf{\int \frac{10^{2x} + 1}{10^{x} - 1}\,dx}$
+\nopagebreak
+\begin{align*}
+\text{Sustituyendo: } &u = 10^{x} \;\;\\[6pt]
+&\Rightarrow\; du = 10^{x}\ln(10)\,dx\\[6pt]
+&\Rightarrow\; dx = \frac{du}{u\ln(10)}. \\[6pt]
+&\Rightarrow\; 10^{2x} = u^{2}. \\[6pt]
+\int \frac{10^{2x} + 1}{10^{x} - 1}\,dx
+&= \int \frac{u^{2} + 1}{u - 1}\cdot\frac{du}{u\ln(10)} \\[6pt]
+&= \frac{1}{\ln(10)}\int \frac{u^{2} + 1}{u(u - 1)}\,du. \\[6pt]
+\text{Diviendo: } &\frac{u^{2} + 1}{u(u-1)} = 1 + \frac{u + 1}{u(u-1)}. \\[6pt]
+\text{Fracciones parciales: } &\frac{u + 1}{u(u-1)} = \frac{A}{u} + \frac{B}{u-1}. \\[4pt]
+&u + 1 = A(u-1) + Bu = (A + B)u - A. \\[4pt]
+&\Rightarrow -A = 1,\; A + B = 1 \;\;\Rightarrow\; A = -1,\; B = 2. \\[6pt]
+\text{Por tanto: } &\frac{u^{2} + 1}{u(u-1)} = 1 - \frac{1}{u} + \frac{2}{u - 1}. \\[6pt]
+\int \frac{10^{2x} + 1}{10^{x} - 1}\,dx
+&= \frac{1}{\ln(10)}\int \left(1 - \frac{1}{u} + \frac{2}{u - 1}\right)\,du \\[6pt]
+&= \frac{1}{\ln(10)}\left(u - \ln|u| + 2\ln|u - 1|\right) + C \\[6pt]
+&= \frac{10^{x}}{\ln(10)} - \frac{\ln\!\bigl|10^{x}\bigr|}{\ln(10)} + \frac{2\ln\!\bigl|10^{x} - 1\bigr|}{\ln(10)} + C \\[6pt]
+&\;= \frac{10^{x}}{\ln(10)} - x + \frac{2}{\ln(10)}\ln\!\bigl|10^{x} - 1\bigr| + C
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int \frac{10^{2x} + 1}{10^{x} - 1}\,dx
+= \frac{10^{x}}{\ln(10)} - x + \frac{2}{\ln(10)}\ln\!\left|10^{x} - 1\right| + C}
+\]

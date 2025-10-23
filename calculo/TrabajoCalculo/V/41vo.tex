@@ -1,0 +1,31 @@
+$\displaystyle \mathbf{\int \frac{x}{\sqrt{16 - 9x^{4}}}\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } &
+\text{Hacemos la sustitución } u = x^{2} \Rightarrow du = 2x\,dx, \\[6pt]
+&\text{por tanto } x\,dx = \tfrac{1}{2}\,du. \\[8pt]
+\text{La integral se transforma en: } &
+\int \frac{x}{\sqrt{16-9x^{4}}}\,dx
+= \tfrac{1}{2}\int \frac{du}{\sqrt{16-9u^{2}}}. \\[8pt]
+\text{Notando que } &
+\sqrt{16-9u^{2}} = \sqrt{4^{2} - (3u)^{2}}, \\[4pt]
+&\text{usamos } \int \frac{du}{\sqrt{a^{2}-k^{2}u^{2}}} = \frac{1}{k}\arcsin\!\left(\frac{k u}{a}\right) + C. \\[8pt]
+\text{Aquí } a=4,\; k=3 \Rightarrow &
+\int \frac{du}{\sqrt{16-9u^{2}}} = \frac{1}{3}\arcsin\!\left(\frac{3u}{4}\right) + C. \\[8pt]
+\text{Por tanto: } &
+\tfrac{1}{2}\int \frac{du}{\sqrt{16-9u^{2}}}
+= \tfrac{1}{2}\cdot \tfrac{1}{3}\arcsin\!\left(\frac{3u}{4}\right) + C \\[6pt]
+&= \tfrac{1}{6}\arcsin\!\left(\frac{3u}{4}\right) + C. \\[8pt]
+\text{Volviendo a } x\ (u=x^{2}): &\\[4pt]
+&\int \frac{x}{\sqrt{16-9x^{4}}}\,dx
+= \tfrac{1}{6}\arcsin\!\left(\frac{3x^{2}}{4}\right) + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+\int \frac{x}{\sqrt{16-9x^{4}}}\,dx
+= \frac{1}{6}\arcsin\!\left(\frac{3x^{2}}{4}\right) + C}
+$$

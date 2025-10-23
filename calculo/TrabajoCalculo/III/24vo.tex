@@ -1,0 +1,53 @@
+$\displaystyle \mathbf{\int x^{3}\mathrm{e}^{x^{2}}\,dx}$
+
+\nopagebreak
+\[
+\text{Observamos que la derivada de } x^{2} \text{ es } 2x.
+\]
+
+\[
+\text{Reescribimos el integrando: } 
+x^{3}\mathrm{e}^{x^{2}} = x^{2}\cdot x\,\mathrm{e}^{x^{2}}.
+\]
+
+\[
+\text{Sea } u = x^{2}, \quad du = 2x\,dx \Rightarrow x\,dx = \tfrac{1}{2}\,du.
+\]
+
+\[
+\Rightarrow\quad
+\int x^{3}\mathrm{e}^{x^{2}}\,dx 
+= \tfrac{1}{2}\int u\,\mathrm{e}^{u}\,du.
+\]
+
+\[
+\text{Aplicamos integración por partes: } 
+\int u\,dv = uv - \int v\,du,
+\quad dv = \mathrm{e}^{u}\,du \Rightarrow v = \mathrm{e}^{u}.
+\]
+
+\[
+\Rightarrow\quad
+\int u\,\mathrm{e}^{u}\,du = u\,\mathrm{e}^{u} - \mathrm{e}^{u} + C.
+\]
+
+\[
+\text{Sustituyendo:}\quad
+\tfrac{1}{2}\int u\,\mathrm{e}^{u}\,du
+= \tfrac{1}{2}\big(u\,\mathrm{e}^{u} - \mathrm{e}^{u}\big) + C.
+\]
+
+\[
+\text{Regresando a la variable original } (u = x^{2}):
+\quad
+\int x^{3}\mathrm{e}^{x^{2}}\,dx
+= \tfrac{1}{2}\,\mathrm{e}^{x^{2}}\,(x^{2} - 1) + C.
+\]
+
+\[
+\boxed{
+\displaystyle 
+\int x^{3}\mathrm{e}^{x^{2}}\,dx
+= \tfrac{1}{2}\,\mathrm{e}^{x^{2}}\,(x^{2} - 1) + C
+}
+\]

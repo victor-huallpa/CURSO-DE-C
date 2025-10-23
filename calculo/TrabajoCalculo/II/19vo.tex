@@ -1,0 +1,21 @@
+$\displaystyle \mathbf{\int \frac{\cos(3x)}{\sin(3x)\,\sqrt{\sin^{2}(3x) - 25}}\,dx}$
+\nopagebreak
+\begin{align*}
+\text{Sustituyendo: } &u = \sin(3x)
+\;\;\Rightarrow\; du = 3\cos(3x)\,dx\\[6pt]
+\int \frac{\cos(3x)}{\sin(3x)\,\sqrt{\sin^{2}(3x) - 25}}\,dx
+&= \frac{1}{3}\int \frac{1}{u\,\sqrt{u^{2} - 25}}\,du \\[6pt]
+\text{Sustituyendo: } &u = 5\sec(\theta)
+\;\;\Rightarrow\; du = 5\sec(\theta)\tan(\theta)\,d\theta, \\[6pt]
+\frac{1}{3}\int \frac{1}{u\,\sqrt{u^{2} - 25}}\,du
+&= \frac{1}{3}\int \frac{1}{5\sec(\theta)\cdot 5\tan(\theta)}\cdot 5\sec(\theta)\tan(\theta)\,d\theta \\[6pt]
+&= \frac{1}{3}\int \frac{1}{5}\,d\theta = \frac{1}{15}\int d\theta \\[6pt]
+&= \frac{\theta}{15} + C \\[6pt]
+&= \frac{1}{15}\,\text{arcsec}\!\left(\frac{u}{5}\right) + C. \\[6pt]
+&=\frac{1}{15}\,\text{arcsec}\!\Bigl(\frac{\sin(3x)}{5}\Bigr) + C.
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int \frac{\cos(3x)}{\sin(3x)\,\sqrt{\sin^{2}(3x) - 25}}\,dx
+= \frac{1}{15}\,\text{arcsec}\!\Bigl(\frac{\sin(3x)}{5}\Bigr) + C.}
+\]
