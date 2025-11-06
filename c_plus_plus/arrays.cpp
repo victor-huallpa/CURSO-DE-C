@@ -4,7 +4,7 @@
 using std::cout, std::cin, std::endl;
 
 int main(){
-    std::string automoviles[] = {"Corvett", "Mustang", "Audi"};// esta definido el tam;o por los elementos dados
+    std::string automoviles[] = {"Corvett", "Mustang", "Audi"};// esta definido el tama;o por los elementos dados
 
     cout<<automoviles[0]<<endl;
     cout<<automoviles[1]<<endl;
