@@ -12,6 +12,7 @@ public:
             // Si usuario es incorrecto, pedir ambos datos
             if (user.empty() || !validarUsuario(user)) {
                 user = datosUsuario("usuario");
+                if(validarUsuario)
                 pass = datosUsuario("contraseña");
             }
             // Si usuario es correcto, pero pass incorrecto
@@ -83,6 +84,7 @@ private:
 };
 
 int main() {
+    //instanciar objeto 
     AccesSistem a;
     a.login();
     return 0;
