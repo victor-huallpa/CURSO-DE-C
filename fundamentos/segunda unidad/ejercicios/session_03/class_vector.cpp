@@ -16,8 +16,7 @@ public:
 };
 
 
-int main(){
-    int v[5] = {1,2,3,4,5};
+int main(){    int v[5] = {1,2,3,4,5};
     VectorNumero vn;
     cout<<"la suma es: "<<vn.suma(v,5)<<endl;
     return 0;
