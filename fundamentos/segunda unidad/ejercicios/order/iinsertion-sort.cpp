@@ -8,6 +8,12 @@ int main() {
     int number[] = {6, 10, 10, 3, 7, 9, 1}; 
     int n = sizeof(number) / sizeof(number[0]); // Tamaño dinámico
 
+    cout << "Arreglo desrodenado"<<endl;
+    for (int i = 0; i < n; i++) {
+        cout << number[i] << " ";
+    }
+    cout<<endl;
+    
     // Empezamos en 1: el primer elemento de la "derecha"
     for (int i = 1; i < n; i++) {
         int llave = number[i]; 
