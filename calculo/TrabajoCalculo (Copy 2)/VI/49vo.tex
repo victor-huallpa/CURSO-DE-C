@@ -1,0 +1,59 @@
+$\displaystyle \mathbf{\int \frac{(\sec^{2}x + 1)\,\sec^{2}x}{1+\tan^{3}x}\,dx}$
+
+\nopagebreak
+
+\[
+\text{Operando: hacemos la sustitución } u=\tan x \Rightarrow du=\sec^{2}x\,dx.
+\]
+
+\[
+\text{Observación: } \sec^{2}x = 1+\tan^{2}x = 1+u^{2}.
+\]
+
+\[
+\text{Sustituyendo: }
+\frac{(\sec^{2}x+1)\sec^{2}x}{1+\tan^{3}x}\,dx
+= \frac{(1+u^{2})+1}{1+u^{3}}\,du
+= \frac{u^{2}+2}{u^{3}+1}\,du.
+\]
+
+\[
+\text{Descomponemos en fracciones parciales: } 
+\frac{u^{2}+2}{u^{3}+1} = \frac{A}{u+1} + \frac{Bu+C}{u^{2}-u+1}.
+\]
+
+\[
+\text{Resolviendo: } A=1,\ B=0,\ C=1.
+\]
+
+\[
+\text{Luego }
+\frac{u^{2}+2}{u^{3}+1} = \frac{1}{u+1} + \frac{1}{u^{2}-u+1}.
+\]
+
+\[
+\text{Integramos término a término: }
+\int \frac{1}{u+1}\,du = \ln|u+1|.
+\]
+
+\[
+\text{Para } \int \frac{1}{u^{2}-u+1}\,du
+\text{ completamos el cuadrado: } u^{2}-u+1=(u-\tfrac{1}{2})^{2}+\tfrac{3}{4}.
+\]
+
+\[
+\text{Por tanto }
+\int \frac{1}{u^{2}-u+1}\,du
+= \frac{2}{\sqrt{3}}\arctan\!\!\left(\frac{2u-1}{\sqrt{3}}\right) + C.
+\]
+
+\[
+\text{Sustituyendo } u=\tan x \text{ se obtiene:}
+\]
+
+\[
+\boxed{\displaystyle 
+\int \frac{(\sec^{2}x + 1)\,\sec^{2}x}{1+\tan^{3}x}\,dx
+= \ln\!\big(1+\tan x\big)
++ \frac{2}{\sqrt{3}}\arctan\!\!\left(\frac{2\tan x - 1}{\sqrt{3}}\right) + C.}
+\]

@@ -1,0 +1,25 @@
+$\displaystyle \mathbf{
+\int \frac{sec^{2}\left(3x\right)}{tan\left(3x\right) \sqrt{16 - tan^{2}\left(3x\right)}}\,dx
+}$
+\nopagebreak
+\begin{align*}
+\text{Sustituyendo: } &u = \tan(3x)
+\;\;\Rightarrow\; du = 3\sec^{2}(3x)\,dx\\[6pt]
+\int \frac{\sec^{2}(3x)}{\tan(3x)\,\sqrt{16 - \tan^{2}(3x)}}\,dx
+&= \frac{1}{3}\int \frac{1}{u\,\sqrt{16 - u^{2}}}\,du \\[6pt]
+\text{Sustituyendo: } &u = 4\,\text{sen}\left(\theta\right)
+\;\;\Rightarrow\; du = 4\cos(\theta)\,d\theta, \\[6pt]
+\frac{1}{3}\int \frac{1}{u\,\sqrt{16- u^{2}}}\,du
+&= \frac{1}{3}\int \frac{1}{4\, \text{sen} \left(\theta\right)\cdot 4\cos(\theta)}\cdot 4\cos(\theta)\,d\theta \\[6pt]
+&= \frac{1}{12}\int \csc(\theta) \\[6pt]
+&= -\frac{1}{12}\ln \left|\csc(\theta)+\cot(\theta)\right|+ C\\[6pt]
+&= -\frac{1}{12}\ln \left|\frac{4+\sqrt{16-u^{2}}}{u}\right|+ C\\[6pt]
+&= -\frac{1}{12}\ln \left(4+\sqrt{16-\tan^{2}(3x)}\right)\\[6pt]
+&\;\;\;\; +\frac{1}{12}\ln \left|\tan(3x)\right|+C
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int \frac{\sec^{2}(3x)}{\tan(3x) \sqrt{16 - \tan^{2}(3x)}}\,dx
+=  -\frac{1}{12}\ln \left(4+\sqrt{16-\tan^{2}(3x)}\right)+\frac{1}{12}\ln \left|\tan(3x)\right|+C
+}
+\]

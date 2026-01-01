@@ -1,0 +1,67 @@
+$\displaystyle \mathbf{\int \frac{\sin(x)}{1+\sin(x)+\cos(x)}\,dx}$
+
+\nopagebreak
+\textbf{Operando:}  
+Usamos la sustitución de Weierstrass \(t=\tan\frac{x}{2}\), con
+\[
+\sin x=\frac{2t}{1+t^{2}},\quad \cos x=\frac{1-t^{2}}{1+t^{2}},\quad dx=\frac{2\,dt}{1+t^{2}}.
+\]
+
+\nopagebreak
+\textbf{Transformación de la integral:}
+\[
+\begin{aligned}
+\int \frac{\sin x}{1+\sin x+\cos x}\,dx
+&= \int \frac{\dfrac{2t}{1+t^{2}}}{\dfrac{2(1+t)}{1+t^{2}}}\cdot\frac{2\,dt}{1+t^{2}} \\[6pt]
+&= 2\int \frac{t}{(1+t)(1+t^{2})}\,dt.
+\end{aligned}
+\]
+
+\nopagebreak
+\textbf{Descomposición en fracciones parciales:}  
+Buscamos
+\[
+\frac{t}{(1+t)(1+t^{2})}=\frac{A}{1+t}+\frac{Bt+C}{1+t^{2}}.
+\]
+Resolviendo obtenemos \(A=-\tfrac{1}{2},\; B=\tfrac{1}{2},\; C=\tfrac{1}{2}\). Así
+\[
+2\cdot\frac{t}{(1+t)(1+t^{2})}
+= -\frac{1}{1+t} + \frac{t+1}{1+t^{2}}.
+\]
+
+\nopagebreak
+\textbf{Integración:}
+\[
+\begin{aligned}
+\int\!\Big(-\frac{1}{1+t}+\frac{t+1}{1+t^{2}}\Big)\,dt
+&= -\ln|1+t| + \tfrac{1}{2}\ln(1+t^{2}) + \arctan t + C.
+\end{aligned}
+\]
+
+\nopagebreak
+\textbf{Volviendo a } \(x\) (recordando \(t=\tan\frac{x}{2}\) y \(\arctan t=\tfrac{x}{2}\)):
+\[
+\int \frac{\sin x}{1+\sin x+\cos x}\,dx
+= -\ln\!\big(1+\tan\tfrac{x}{2}\big) + \tfrac{1}{2}\ln\!\big(1+\tan^{2}\tfrac{x}{2}\big) + \tfrac{x}{2} + C.
+\]
+
+\nopagebreak
+\textbf{Simplificación (identidades de ángulo mitad):}
+\[
+1+\tan^{2}\!\tfrac{x}{2}=\sec^{2}\!\tfrac{x}{2},\qquad
+(1+\tan\tfrac{x}{2})\cos\tfrac{x}{2}=\cos\tfrac{x}{2}+\sin\tfrac{x}{2}.
+\]
+Usando además
+\[
+\sin x+\cos x+1=\frac{2(1+\tan\frac{x}{2})}{1+\tan^{2}\frac{x}{2}},
+\]
+se verifica que la expresión anterior es equivalente (a una constante aditiva) a la forma solicitada.
+
+\nopagebreak
+\[
+\boxed{%
+\displaystyle
+\int \frac{\sin x}{1+\sin x+\cos x}\,dx
+= -\frac{1}{2}\Big(\ln\big|\sin x+\cos x+1\big|-x+\ln\big|1+\tan\tfrac{x}{2}\big|\Big)+C
+}
+\]

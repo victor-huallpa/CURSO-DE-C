@@ -1,0 +1,43 @@
+$\displaystyle \mathbf{\int \tan^5(3x)\,dx}$
+
+\nopagebreak
+\begin{align*}
+\text{Usamos } \tan^2(3x) &= \sec^2(3x)-1, \\[2pt]
+\tan^5(3x) &= \tan^3(3x)\tan^2(3x) = \tan^3(3x)(\sec^2(3x)-1), \\[2pt]
+\text{entonces: } \int \tan^5(3x)\,dx &= \int \tan^3(3x)\sec^2(3x)\,dx - \int \tan^3(3x)\,dx
+\end{align*}
+
+\[
+\text{Sustitución } t = \tan(3x) \implies dt = 3\sec^2(3x)\,dx \implies dx = \frac{dt}{3\sec^2(3x)}.
+\]
+
+\[
+\int \tan^3(3x)\sec^2(3x)\,dx = \frac{1}{3}\int t^3\,dt = \frac{t^4}{12} = \frac{\tan^4(3x)}{12}.
+\]
+
+\[
+\int \tan^3(3x)\,dx = \int \tan(3x)(\tan^2(3x))\,dx = \int \tan(3x)(\sec^2(3x)-1)\,dx.
+\]
+
+\[
+\int \tan(3x)\sec^2(3x)\,dx = \frac{\tan^2(3x)}{6}, \quad \int \tan(3x)\,dx = -\frac{1}{3}\ln|\cos(3x)|.
+\]
+
+\nopagebreak
+\text{Combinando y escribiendo en términos de } $\sec(3x)$:
+
+\[
+\int \tan^5(3x)\,dx
+= \frac{1}{12}\Big[\sec^4(3x) - 4\sec^2(3x) + 4\ln|\sec(3x)|\Big] + C
+\]
+
+\[
+\boxed{
+\displaystyle 
+\int \tan^5(3x)\,dx
+= \frac{\sec^4(3x)}{12}
+- \frac{\sec^2(3x)}{3}
++ \frac{\ln|\sec(3x)|}{3}
++ C
+}
+\]

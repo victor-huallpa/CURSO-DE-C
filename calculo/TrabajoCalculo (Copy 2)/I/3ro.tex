@@ -1,0 +1,72 @@
+$\displaystyle \mathbf{\int \frac{x^{2}+2x}{\sqrt{x^{3}+2x^{2}+1}}\,dx}$
+
+\nopagebreak
+\textbf{Desarrollo (reducción):}
+
+\[
+u(x)=x^{3}+2x^{2}+1,\qquad du=(3x^{2}+4x)\,dx.
+\]
+
+\[
+\frac{x^{2}+2x}{\sqrt{u}} \;=\; 
+\frac{1}{2}\,\frac{3x^{2}+4x}{\sqrt{u}} \;-\; \frac{1}{2}\,\frac{x^{2}}{\sqrt{u}}.
+\]
+
+De donde, usando $\dfrac{d}{dx}\sqrt{u}=\dfrac{3x^{2}+4x}{2\sqrt{u}}$, obtenemos
+
+\[
+\int \frac{x^{2}+2x}{\sqrt{u}}\,dx
+= \int \frac{d}{dx}\big(\sqrt{u}\,\big)\,dx \;-\; \frac{1}{2}\int \frac{x^{2}}{\sqrt{u}}\,dx.
+\]
+
+Es decir,
+\[
+I := \int \frac{x^{2}+2x}{\sqrt{x^{3}+2x^{2}+1}}\,dx
+= \sqrt{u} - \tfrac{1}{2}J,
+\qquad J:=\int \frac{x^{2}}{\sqrt{u}}\,dx.
+\]
+
+Para $J$ hacemos la identidad algebraica
+\[
+x^{2}=\tfrac{1}{3}(3x^{2}+4x)-\tfrac{4}{3}x,
+\]
+que da
+\[
+J=\tfrac{1}{3}\int\frac{3x^{2}+4x}{\sqrt{u}}\,dx \;-\; \tfrac{4}{3}\int\frac{x}{\sqrt{u}}\,dx
+= \tfrac{2}{3}\sqrt{u} - \tfrac{4}{3}K,
+\]
+donde
+\[
+K:=\int\frac{x}{\sqrt{u}}\,dx.
+\]
+
+Sustituyendo en la expresión para \(I\) resulta
+\[
+I = \sqrt{u} - \tfrac{1}{2}\!\left(\tfrac{2}{3}\sqrt{u} - \tfrac{4}{3}K\right)
+= \tfrac{2}{3}\sqrt{u} + \tfrac{2}{3}K.
+\]
+
+Por tanto la integral original se reduce a
+\[
+\boxed{%
+I=\frac{2}{3}\sqrt{x^{3}+2x^{2}+1} \;+\; \frac{2}{3}\int \frac{x}{\sqrt{x^{3}+2x^{2}+1}}\,dx.}
+\]
+
+\nopagebreak
+\textbf{Conclusión y opciones:}
+
+\begin{enumerate}
+\item[(A)] La integral se ha reducido correctamente a la forma anterior; queda una integral residual
+\(\displaystyle \int \dfrac{x}{\sqrt{x^{3}+2x^{2}+1}}\,dx\).
+\item[(B)] Verificación simbólica (Risch/algoritmos de integración simbólica) no devuelve una primitiva en términos de funciones elementales. Eso implica que la primitiva \emph{no} puede ser expresada por una combinación finita de polinomios, exponenciales, logaritmos, potencias y funciones trigonométricas básicas; la antiderivada se expresa en términos de integrales elípticas (funciones especiales).
+\item[(C)] Si lo que quieres es una primitiva explícita usable en cálculos, puedo:
+  \begin{itemize}
+  \item transformar la integral residual a la forma canónica de integrales elípticas (te la doy en notación estándar \(\mathrm{EllipticF},\mathrm{EllipticE}\) si lo deseas), o
+  \item dar una primitiva numérica/plotada (series o evaluación numérica para un intervalo), o
+  \item intentar una primitiva en términos de \(x\) y la integral indefinida residual (dejándola como una sola expresión reducida, útil para integración por partes adicionales si corresponde).
+  \end{itemize}
+\end{enumerate}
+
+\nopagebreak
+\textbf{Sugerencia práctica:} si tu objetivo es evaluación numérica o estudiar comportamiento, te doy la forma reducida (A) y un comando de ejemplo para calcular la primitiva numérica en tu sistema (por ejemplo en Python/SymPy o Mathematica). Si necesitas la forma en integrales elípticas explícitas, dime y la transformo y te doy la expresión en términos de funciones elípticas estándar.
+

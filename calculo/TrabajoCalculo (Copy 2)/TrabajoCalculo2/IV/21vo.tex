@@ -1,0 +1,19 @@
+Dentro de $y=25-x^2$, $256x=3y^2$, $16y=9x^2$
+
+\nopagebreak
+\begin{align*}
+\text{Puntos de intersección:} \\
+1) \ 256x=3y^2 \text{ y } 16y=9x^2 & \implies (0,0) \\
+2) \ 256x=3y^2 \text{ y } y=25-x^2 & \implies (3,16) \\
+3) \ 16y=9x^2 \text{ y } y=25-x^2 & \implies (4,9) \\
+\text{Dividimos en dos regiones en } x=3: \\
+A_1 &= \int_{0}^{3} \left( \frac{16}{\sqrt{3}}x^{1/2} - \frac{9}{16}x^2 \right) dx \\
+&= \left[ \frac{32}{3\sqrt{3}}x^{3/2} - \frac{3}{16}x^3 \right]_0^3 = 32 - \frac{81}{16} = \frac{431}{16} \\
+A_2 &= \int_{3}^{4} \left( 25-x^2 - \frac{9}{16}x^2 \right) dx \\
+&= 25 \int_{3}^{4} \left( 1 - \frac{x^2}{16} \right) dx = \frac{275}{48} \\
+A_{total} &= \frac{431}{16} + \frac{275}{48} = \frac{1293+275}{48} = \frac{98}{3}
+\end{align*}
+
+\[
+\boxed{\displaystyle \frac{98}{3}}
+\]

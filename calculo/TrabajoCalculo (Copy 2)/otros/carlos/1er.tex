@@ -1,0 +1,62 @@
+$\displaystyle \mathbf{\sum_{i=1}^{n} i^4}$ 
+\nopagebreak
+
+\[
+(i+1)^5 - i^5.
+\]
+\[
+(i+1)^5 = i^5 + 5i^4 + 10i^3 + 10i^2 + 5i + 1,
+\]
+\[
+(i+1)^5 - i^5 = 5i^4 + 10i^3 + 10i^2 + 5i + 1.
+\]
+\[
+i^4 = \frac{1}{5}\big[(i+1)^5 - i^5\big]
+      - 2i^3 - 2i^2 - i - \frac{1}{5}.
+\]
+
+Sumando de \(i=1\) a \(n\):
+\[
+\sum_{i=1}^{n} i^4
+=
+\frac{1}{5}\sum_{i=1}^{n}\big[(i+1)^5 - i^5\big]
+-2\sum_{i=1}^{n} i^3
+-2\sum_{i=1}^{n} i^2
+-\sum_{i=1}^{n} i
+-\sum_{i=1}^{n} \frac{1}{5}.
+\]
+
+La suma telescópica cumple:
+\[
+\sum_{i=1}^{n}\big[(i+1)^5 - i^5\big] = (n+1)^5 - 1.
+\]
+
+Usando sumas básicas:
+\[
+\sum i = \frac{n(n+1)}{2}, \quad
+\sum i^2 = \frac{n(n+1)(2n+1)}{6},
+\]
+\[
+\sum i^3 = \left(\frac{n(n+1)}{2}\right)^2, \quad
+\sum \frac{1}{5} = \frac{n}{5}.
+\]
+
+Sustituyendo:
+\[
+\sum_{i=1}^{n} i^4
+=
+\frac{(n+1)^5 - 1}{5}
+-2\left(\frac{n(n+1)}{2}\right)^2
+-2\left(\frac{n(n+1)(2n+1)}{6}\right)
+-\frac{n(n+1)}{2}
+-\frac{n}{5}.
+\]
+
+Simplificando:
+\[
+\boxed{
+\sum_{i=1}^{n} i^4
+=
+\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30}
+}
+\]

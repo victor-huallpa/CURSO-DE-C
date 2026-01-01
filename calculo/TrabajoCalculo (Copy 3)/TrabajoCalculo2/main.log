@@ -1,0 +1,545 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.22)  17 DEC 2025 11:32
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/var/www/html/C/cursos/calculo/TrabajoCalculo/TrabajoCalculo2/main.tex
+(/var/www/html/C/cursos/calculo/TrabajoCalculo/TrabajoCalculo2/main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip50
+\thanksmargin=\skip51
+\droptitle=\skip52
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen149
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen150
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count198
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count199
+\leftroot@=\count266
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count267
+\DOTSCASE@=\count268
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count269
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count270
+\dotsspace@=\muskip16
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks20
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks21
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks22
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip56
+\enit@outerparindent=\dimen158
+\enit@toks=\toks24
+\enit@inbox=\box53
+\enit@count@id=\count276
+\enitdp@description=\count277
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count278
+\l__pdf_internal_box=\box54
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count279
+\scratchdimen=\dimen161
+\scratchbox=\box55
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen162
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./I/1er.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)) (./I/2do.tex) (./I/3ro.tex) (./I/4to.tex
+Overfull \hbox (52.89848pt too wide) detected at line 13
+[]
+ []
+
+[1]) (./I/5to.tex) (./I/6to.tex) (./II/7mo.tex [2]
+<Graficas/ejer7.png, id=22, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer7.png Graphic file (type png)
+<use Graficas/ejer7.png>
+Package pdftex.def Info: Graficas/ejer7.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./II/8vo.tex [3 <./Graficas/ejer7.png>]
+<Graficas/ejer8.png, id=29, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer8.png Graphic file (type png)
+<use Graficas/ejer8.png>
+Package pdftex.def Info: Graficas/ejer8.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./II/9no.tex
+<Graficas/ejer9.png, id=30, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer9.png Graphic file (type png)
+<use Graficas/ejer9.png>
+Package pdftex.def Info: Graficas/ejer9.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./II/10mo.tex [4 <./Graficas/ejer8.png> <./Graficas/ejer9.png>]
+<Graficas/ejer10.png, id=36, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer10.png Graphic file (type png)
+<use Graficas/ejer10.png>
+Package pdftex.def Info: Graficas/ejer10.png  used on input line 20.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./II/11vo.tex
+<Graficas/ejer11.png, id=37, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer11.png Graphic file (type png)
+<use Graficas/ejer11.png>
+Package pdftex.def Info: Graficas/ejer11.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [5 <./Graficas/ejer10.png>]) (./III/12vo.tex
+<Graficas/ejer12.png, id=42, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer12.png Graphic file (type png)
+<use Graficas/ejer12.png>
+Package pdftex.def Info: Graficas/ejer12.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./III/13vo.tex [6 <./Graficas/ejer11.png> <./Graficas/ejer12.png>]
+<Graficas/ejer13.png, id=49, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer13.png Graphic file (type png)
+<use Graficas/ejer13.png>
+Package pdftex.def Info: Graficas/ejer13.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./III/14vo.tex
+<Graficas/ejer14.png, id=50, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer14.png Graphic file (type png)
+<use Graficas/ejer14.png>
+Package pdftex.def Info: Graficas/ejer14.png  used on input line 16.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [7 <./Graficas/ejer13.png>]) (./III/15vo.tex
+<Graficas/ejer15.png, id=55, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer15.png Graphic file (type png)
+<use Graficas/ejer15.png>
+Package pdftex.def Info: Graficas/ejer15.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/16vo.tex [8 <./Graficas/ejer14.png> <./Graficas/ejer15.png>]
+<Graficas/ejer16.png, id=61, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer16.png Graphic file (type png)
+<use Graficas/ejer16.png>
+Package pdftex.def Info: Graficas/ejer16.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/17vo.tex
+<Graficas/ejer17.png, id=62, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer17.png Graphic file (type png)
+<use Graficas/ejer17.png>
+Package pdftex.def Info: Graficas/ejer17.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [9 <./Graficas/ejer16.png>]) (./IV/18vo.tex
+<Graficas/ejer18.png, id=67, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer18.png Graphic file (type png)
+<use Graficas/ejer18.png>
+Package pdftex.def Info: Graficas/ejer18.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/19vo.tex [10 <./Graficas/ejer17.png> <./Graficas/ejer18.png>]
+<Graficas/ejer19.png, id=73, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer19.png Graphic file (type png)
+<use Graficas/ejer19.png>
+Package pdftex.def Info: Graficas/ejer19.png  used on input line 21.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/20vo.tex
+<Graficas/ejer20.png, id=74, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer20.png Graphic file (type png)
+<use Graficas/ejer20.png>
+Package pdftex.def Info: Graficas/ejer20.png  used on input line 16.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [11 <./Graficas/ejer19.png>]) (./IV/21vo.tex
+<Graficas/ejer21.png, id=79, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer21.png Graphic file (type png)
+<use Graficas/ejer21.png>
+Package pdftex.def Info: Graficas/ejer21.png  used on input line 22.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/22vo.tex [12 <./Graficas/ejer20.png> <./Graficas/ejer21.png>]
+<Graficas/ejer22.png, id=86, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer22.png Graphic file (type png)
+<use Graficas/ejer22.png>
+Package pdftex.def Info: Graficas/ejer22.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/23vo.tex
+<Graficas/ejer23.png, id=87, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer23.png Graphic file (type png)
+<use Graficas/ejer23.png>
+Package pdftex.def Info: Graficas/ejer23.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [13 <./Graficas/ejer22.png>]) (./IV/24vo.tex
+<Graficas/ejer24.png, id=92, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer24.png Graphic file (type png)
+<use Graficas/ejer24.png>
+Package pdftex.def Info: Graficas/ejer24.png  used on input line 16.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/25vo.tex [14 <./Graficas/ejer23.png> <./Graficas/ejer24.png>]
+<Graficas/ejer25.png, id=99, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer25.png Graphic file (type png)
+<use Graficas/ejer25.png>
+Package pdftex.def Info: Graficas/ejer25.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/26vo.tex
+<Graficas/ejer26.png, id=100, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer26.png Graphic file (type png)
+<use Graficas/ejer26.png>
+Package pdftex.def Info: Graficas/ejer26.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [15 <./Graficas/ejer25.png>]) (./IV/27vo.tex
+Overfull \hbox (16.06784pt too wide) detected at line 14
+[]
+ []
+
+<Graficas/ejer27.png, id=105, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer27.png Graphic file (type png)
+<use Graficas/ejer27.png>
+Package pdftex.def Info: Graficas/ejer27.png  used on input line 21.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./IV/28vo.tex [16 <./Graficas/ejer26.png> <./Graficas/ejer27.png>]
+<Graficas/ejer28.png, id=111, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer28.png Graphic file (type png)
+<use Graficas/ejer28.png>
+Package pdftex.def Info: Graficas/ejer28.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./V/29vo.tex
+Overfull \hbox (33.97346pt too wide) detected at line 13
+[]
+ []
+
+[17 <./Graficas/ejer28.png>]
+<Graficas/ejer29.png, id=116, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer29.png Graphic file (type png)
+<use Graficas/ejer29.png>
+Package pdftex.def Info: Graficas/ejer29.png  used on input line 20.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./V/30vo.tex
+<Graficas/ejer30.png, id=117, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer30.png Graphic file (type png)
+<use Graficas/ejer30.png>
+Package pdftex.def Info: Graficas/ejer30.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./V/31vo.tex [18 <./Graficas/ejer29.png> <./Graficas/ejer30.png>]
+<Graficas/ejer31.png, id=124, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer31.png Graphic file (type png)
+<use Graficas/ejer31.png>
+Package pdftex.def Info: Graficas/ejer31.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./V/32vo.tex
+<Graficas/ejer32.png, id=125, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer32.png Graphic file (type png)
+<use Graficas/ejer32.png>
+Package pdftex.def Info: Graficas/ejer32.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [19 <./Graficas/ejer31.png>]) (./V/33vo.tex
+Overfull \hbox (19.3973pt too wide) detected at line 12
+[]
+ []
+
+<Graficas/ejer33.png, id=130, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer33.png Graphic file (type png)
+<use Graficas/ejer33.png>
+Package pdftex.def Info: Graficas/ejer33.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./V/34vo.tex [20 <./Graficas/ejer32.png> <./Graficas/ejer33.png>]
+<Graficas/ejer34.png, id=136, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer34.png Graphic file (type png)
+<use Graficas/ejer34.png>
+Package pdftex.def Info: Graficas/ejer34.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./V/35vo.tex
+<Graficas/ejer35.png, id=137, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer35.png Graphic file (type png)
+<use Graficas/ejer35.png>
+Package pdftex.def Info: Graficas/ejer35.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [21 <./Graficas/ejer34.png>]) (./V/36vo.tex
+Overfull \hbox (67.70145pt too wide) detected at line 12
+[]
+ []
+
+<Graficas/ejer36.png, id=142, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer36.png Graphic file (type png)
+<use Graficas/ejer36.png>
+Package pdftex.def Info: Graficas/ejer36.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./V/37vo.tex [22 <./Graficas/ejer35.png> <./Graficas/ejer36.png>]
+<Graficas/ejer37.png, id=148, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer37.png Graphic file (type png)
+<use Graficas/ejer37.png>
+Package pdftex.def Info: Graficas/ejer37.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VI/38vo.tex
+<Graficas/ejer38.png, id=149, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer38.png Graphic file (type png)
+<use Graficas/ejer38.png>
+Package pdftex.def Info: Graficas/ejer38.png  used on input line 16.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [23 <./Graficas/ejer37.png>]) (./VI/39vo.tex
+<Graficas/ejer39.png, id=154, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer39.png Graphic file (type png)
+<use Graficas/ejer39.png>
+Package pdftex.def Info: Graficas/ejer39.png  used on input line 15.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VI/40vo.tex
+<Graficas/ejer40.png, id=155, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer40.png Graphic file (type png)
+<use Graficas/ejer40.png>
+Package pdftex.def Info: Graficas/ejer40.png  used on input line 15.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [24 <./Graficas/ejer38.png> <./Graficas/ejer39.png>]) (./VI/41vo.tex
+<Graficas/ejer41.png, id=162, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer41.png Graphic file (type png)
+<use Graficas/ejer41.png>
+Package pdftex.def Info: Graficas/ejer41.png  used on input line 14.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VI/42vo.tex
+<Graficas/ejer42.png, id=163, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer42.png Graphic file (type png)
+<use Graficas/ejer42.png>
+Package pdftex.def Info: Graficas/ejer42.png  used on input line 15.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [25 <./Graficas/ejer40.png> <./Graficas/ejer41.png>]) (./VI/43vo.tex
+<Graficas/ejer43.png, id=170, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer43.png Graphic file (type png)
+<use Graficas/ejer43.png>
+Package pdftex.def Info: Graficas/ejer43.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VI/44vo.tex [26 <./Graficas/ejer42.png> <./Graficas/ejer43.png>]
+<Graficas/ejer44.png, id=176, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer44.png Graphic file (type png)
+<use Graficas/ejer44.png>
+Package pdftex.def Info: Graficas/ejer44.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VII/45vo.tex
+<Graficas/ejer45.png, id=177, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer45.png Graphic file (type png)
+<use Graficas/ejer45.png>
+Package pdftex.def Info: Graficas/ejer45.png  used on input line 19.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+ [27 <./Graficas/ejer44.png>]) (./VII/46vo.tex
+<Graficas/ejer46.png, id=182, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer46.png Graphic file (type png)
+<use Graficas/ejer46.png>
+Package pdftex.def Info: Graficas/ejer46.png  used on input line 20.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VII/47vo.tex [28 <./Graficas/ejer45.png> <./Graficas/ejer46.png>]
+<Graficas/ejer47.png, id=188, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer47.png Graphic file (type png)
+<use Graficas/ejer47.png>
+Package pdftex.def Info: Graficas/ejer47.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VII/48vo.tex
+Overfull \hbox (36.20743pt too wide) detected at line 13
+[]
+ []
+
+[29 <./Graficas/ejer47.png>]
+<Graficas/ejer48.png, id=193, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer48.png Graphic file (type png)
+<use Graficas/ejer48.png>
+Package pdftex.def Info: Graficas/ejer48.png  used on input line 20.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VII/49vo.tex
+<Graficas/ejer49.png, id=194, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer49.png Graphic file (type png)
+<use Graficas/ejer49.png>
+Package pdftex.def Info: Graficas/ejer49.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./VII/50vo.tex [30 <./Graficas/ejer48.png> <./Graficas/ejer49.png>]
+<Graficas/ejer50.png, id=201, 1131.22626pt x 892.33376pt>
+File: Graficas/ejer50.png Graphic file (type png)
+<use Graficas/ejer50.png>
+Package pdftex.def Info: Graficas/ejer50.png  used on input line 18.
+(pdftex.def)             Requested size: 241.84843pt x 190.77235pt.
+) (./Graficas/galeria.tex) [31 <./Graficas/ejer50.png>] (./main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 4123 strings out of 474222
+ 64184 string characters out of 5748732
+ 1944975 words of memory out of 5000000
+ 26198 multiletter control sequences out of 15000+600000
+ 564887 words of font info for 61 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,11n,65p,368b,373s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (32 pages, 2563116 bytes).
+PDF statistics:
+ 262 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+

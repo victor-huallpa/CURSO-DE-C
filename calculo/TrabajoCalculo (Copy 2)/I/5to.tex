@@ -1,0 +1,26 @@
+$\displaystyle \mathbf{\int \frac{x^{3} - 4x^{2} + 5x - 1}{x^{2} - 2x + 1} \, dx}$
+\nopagebreak
+\begin{align*}
+\intertext{Dividiendo:} \\[4pt]
+\int \frac{x^{3} - 4x^{2} + 5x - 1}{x^{2} - 2x + 1} \, dx
+&= \int \left(\frac{1}{x^{2} - 2x + 1} + x - 2\right) dx\\[6pt]
+&= \int \frac{1}{x^{2} - 2x + 1} \, dx + \int x \, dx - 2 \int \, dx\\[6pt]
+\text{Resolviendo: }&\int \frac{1}{x^{2} - 2x + 1} \, dx \\[6pt]
+&\int \frac{1}{\left(x - 1\right)^{2}} \, dx\\[6pt]
+\text{Sustituyendo: } &u = x - 1 
+\;\;\Rightarrow\; du = dx \\[6pt]
+\int \frac{1}{\left(x - 1\right)^{2}} \, dx
+&= \int \frac{1}{u^{2}} \, du\\[6pt]
+&= -\frac{1}{u}\\[6pt]
+&= -\frac{1}{x - 1}\\[6pt]
+\text{Reemplazando}\\[6pt]
+\int \frac{1}{x^{2} - 2x + 1} \, dx + \int x \, dx - 2 \int dx\\[6pt]
+&= -\frac{1}{x - 1} + \int x \, dx - 2 \int dx\\[6pt]
+&= -\frac{1}{x - 1} + \frac{x^{2}}{2} - 2x  + C
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int \frac{x^{3} - 4x^{2} + 5x - 1}{x^{2} - 2x + 1} \, dx
+= \frac{x^{2}}{2} - 2x - \frac{1}{x - 1} + C
+}
+\]

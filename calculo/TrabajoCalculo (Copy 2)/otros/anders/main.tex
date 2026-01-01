@@ -1,0 +1,452 @@
+\documentclass{article}
+\usepackage{amsmath}
+% \documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\textbf{Ejercicio 41}
+
+\[
+\int_{-2}^{2} \frac{dx}{\sqrt{4 - x^2}}
+\]
+
+\textbf{Solución}
+
+Sabemos que:
+\[
+\int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin\left(\frac{x}{a}\right) + C
+\]
+
+En este caso:
+\[
+a^2 = 4 \Rightarrow a = 2
+\]
+
+Entonces:
+\[
+\int \frac{dx}{\sqrt{4 - x^2}}
+= \arcsin\left(\frac{x}{2}\right)
+\]
+
+Evaluando en los límites:
+\[
+\left[ \arcsin\left(\frac{x}{2}\right) \right]_{-2}^{2}
+= \arcsin(1) - \arcsin(-1)
+= \frac{\pi}{2} + \frac{\pi}{2}
+= \pi
+\]
+
+\[
+\boxed{\pi}
+\]
+
+
+\textbf{Ejercicio 42}
+
+\[
+\int_{0}^{4} \frac{dx}{4 - x}
+\]
+
+\textbf{Solución}
+
+Observamos que la función no está definida en \(x = 4\), por lo tanto
+la integral es impropia.
+
+\[
+\int_{0}^{4} \frac{dx}{4 - x}
+= \lim_{b \to 4^-} \int_{0}^{b} \frac{dx}{4 - x}
+\]
+
+Calculamos la integral:
+\[
+\int \frac{dx}{4 - x} = -\ln|4 - x| + C
+\]
+
+Evaluamos en los límites:
+\[
+\lim_{b \to 4^-}
+\left[ -\ln|4 - x| \right]_{0}^{b}
+\]
+
+\[
+= \lim_{b \to 4^-}
+\left( -\ln(4 - b) + \ln 4 \right)
+\]
+
+Como \(4 - b \to 0^+\), se tiene:
+\[
+\ln(4 - b) \to -\infty
+\]
+
+Por lo tanto:
+\[
+-\ln(4 - b) \to +\infty
+\]
+
+---
+
+\[
+\boxed{\int_{0}^{4} \frac{dx}{4 - x} \text{ diverge}}
+\]
+
+\textbf{Ejercicio 43}
+
+\[
+\int_{-\infty}^{0} x e^x \, dx
+\]
+
+\textbf{Solución}
+
+La integral es impropia porque el límite inferior es \(-\infty\).
+
+\[
+\int_{-\infty}^{0} x e^x \, dx
+= \lim_{a \to -\infty} \int_{a}^{0} x e^x \, dx
+\]
+
+Usamos integración por partes:
+
+\[
+\begin{aligned}
+u &= x \quad & dv &= e^x dx \\
+du &= dx \quad & v &= e^x
+\end{aligned}
+\]
+
+Entonces:
+\[
+\int x e^x \, dx = x e^x - \int e^x dx
+\]
+
+\[
+= x e^x - e^x
+\]
+
+\[
+= e^x (x - 1)
+\]
+
+Evaluamos en los límites:
+\[
+\lim_{a \to -\infty}
+\left[ e^x (x - 1) \right]_{a}^{0}
+\]
+
+\[
+= \left( e^0 (0 - 1) \right)
+- \lim_{a \to -\infty} e^a (a - 1)
+\]
+
+\[
+= -1 - 0
+\]
+
+---
+
+\[
+\boxed{\int_{-\infty}^{0} x e^x \, dx = -1}
+\]
+
+
+\textbf{Ejercicio 44}
+
+\[
+\int_{-\infty}^{+\infty} \frac{dx}{1 + 4x^2}
+\]
+
+\textbf{Solución}
+
+La integral es impropia porque los límites son infinitos.
+
+\[
+\int_{-\infty}^{+\infty} \frac{dx}{1 + 4x^2}
+= \lim_{a \to -\infty} \int_{a}^{0} \frac{dx}{1 + 4x^2}
++ \lim_{b \to +\infty} \int_{0}^{b} \frac{dx}{1 + 4x^2}
+\]
+
+Sabemos que:
+\[
+\int \frac{dx}{a^2 + x^2} = \frac{1}{a} \arctan\left(\frac{x}{a}\right) + C
+\]
+
+Reescribimos:
+\[
+\frac{1}{1 + 4x^2} = \frac{1}{1^2 + (2x)^2}
+\]
+
+Entonces:
+\[
+\int \frac{dx}{1 + 4x^2}
+= \frac{1}{2} \arctan(2x)
+\]
+
+Evaluamos los límites:
+\[
+\left[ \frac{1}{2} \arctan(2x) \right]_{-\infty}^{+\infty}
+\]
+
+\[
+= \frac{1}{2}
+\left( \frac{\pi}{2} - \left(-\frac{\pi}{2}\right) \right)
+\]
+
+\[
+= \frac{1}{2} \pi
+\]
+
+---
+
+\[
+\boxed{\int_{-\infty}^{+\infty} \frac{dx}{1 + 4x^2} = \frac{\pi}{2}}
+\]
+
+
+
+% \begin{document}
+
+\textbf{Ejercicio 45}
+
+\[
+y^2 = 8x^2 \quad \text{desde } x=1 \text{ hasta } x=8
+\]
+
+Despejamos \(y\):
+\[
+y = 2\sqrt{2}\,x
+\]
+
+La longitud de arco es:
+\[
+L=\int_a^b \sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx
+\]
+
+Derivando:
+\[
+\frac{dy}{dx} = 2\sqrt{2}
+\]
+
+Sustituyendo:
+\[
+L=\int_{1}^{8} \sqrt{1+(2\sqrt{2})^2}\,dx
+= \int_{1}^{8} \sqrt{9}\,dx
+\]
+
+\[
+L=\int_{1}^{8} 3\,dx
+=3(8-1)
+=21
+\]
+
+\[
+\boxed{L = 21}
+\]
+
+\textbf{Ejercicio 46}
+
+\[
+27y^2 = 4(x-2)^3
+\quad \text{desde } (2,0) \text{ hasta } (11,6\sqrt{3})
+\]
+
+Despejamos:
+\[
+y = \frac{2}{3\sqrt{3}}(x-2)^{3/2}
+\]
+
+Derivamos:
+\[
+\frac{dy}{dx} = \frac{1}{\sqrt{3}}(x-2)^{1/2}
+\]
+
+Longitud de arco:
+\[
+L=\int_{2}^{11} \sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx
+\]
+
+\[
+= \int_{2}^{11} \sqrt{\frac{x+1}{3}}\,dx
+= \frac{1}{\sqrt{3}}\int_{2}^{11} \sqrt{x+1}\,dx
+\]
+
+\[
+= \frac{2}{3\sqrt{3}}
+\left[(x+1)^{3/2}\right]_{2}^{11}
+\]
+
+\[
+= \frac{2}{3\sqrt{3}}(24\sqrt{3}-3\sqrt{3})
+= 14
+\]
+
+\[
+\boxed{L=14}
+\]
+
+
+
+\textbf{Ejercicio 47}
+
+\[
+y=\ln x \quad \text{desde } x=1 \text{ hasta } x=2\sqrt{2}
+\]
+
+Derivamos:
+\[
+\frac{dy}{dx}=\frac{1}{x}
+\]
+
+Longitud de arco:
+\[
+L=\int_{1}^{2\sqrt{2}} \sqrt{1+\frac{1}{x^2}}\,dx
+=\int_{1}^{2\sqrt{2}} \frac{\sqrt{x^2+1}}{x}\,dx
+\]
+
+La primitiva es:
+\[
+\sqrt{x^2+1}
++\ln\!\left(\frac{x}{\sqrt{x^2+1}+1}\right)
+\]
+
+Evaluando:
+\[
+L=\left[
+\sqrt{x^2+1}
++\ln\!\left(\frac{x}{\sqrt{x^2+1}+1}\right)
+\right]_{1}^{2\sqrt{2}}
+\]
+
+\[
+\boxed{
+L=3-\sqrt{2}
++\ln\!\left(\frac{(2\sqrt{2})(\sqrt{2}+1)}{4}\right)
+}
+\]
+
+\textbf{Ejercicio 48}
+
+\[
+y=\ln\!\left(\frac{e^x-1}{e^x+1}\right),
+\qquad 2\le x\le 4
+\]
+
+Derivamos:
+\[
+\frac{dy}{dx}
+=\frac{e^x}{e^x-1}-\frac{e^x}{e^x+1}
+=\frac{2e^x}{e^{2x}-1}
+\]
+
+Longitud de arco:
+\[
+L=\int_{2}^{4}\sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx
+\]
+
+\[
+\sqrt{1+\left(\frac{2e^x}{e^{2x}-1}\right)^2}
+=\frac{e^{2x}+1}{e^{2x}-1}
+\]
+
+\[
+L=\int_{2}^{4}\frac{e^{2x}+1}{e^{2x}-1}\,dx
+\]
+
+\[
+= \int_{2}^{4}dx
++2\int_{2}^{4}\frac{dx}{e^{2x}-1}
+\]
+
+\[
+L=\left[\ln(e^{2x}-1)-x\right]_{2}^{4}
+\]
+
+\[
+\boxed{
+L=\ln\!\left(\frac{e^8-1}{e^4-1}\right)-2
+}
+\]
+
+\textbf{Ejercicio 49}
+
+\[
+y=\ln(\cos x), \qquad \frac{\pi}{6}\le x\le \frac{\pi}{4}
+\]
+
+Derivamos:
+\[
+\frac{dy}{dx}=-\tan x
+\]
+
+Longitud de arco:
+\[
+L=\int_{\pi/6}^{\pi/4}\sqrt{1+\tan^2 x}\,dx
+\]
+
+Usando \(1+\tan^2 x=\sec^2 x\):
+\[
+L=\int_{\pi/6}^{\pi/4}\sec x\,dx
+\]
+
+\[
+L=\left[\ln(\sec x+\tan x)\right]_{\pi/6}^{\pi/4}
+\]
+
+\[
+\boxed{
+L=\ln\!\left(\frac{\sqrt{2}+1}{\sqrt{3}}\right)
+}
+\]
+
+
+\textbf{Ejercicio 50}
+
+Calcular la longitud del arco de una circunferencia de radio \(3\)
+que forma un ángulo de \(60^\circ\) con el eje \(x\) positivo.
+
+\bigskip
+
+\textbf{Método 1: Longitud de arco}
+
+La circunferencia se parametriza como:
+\[
+x=3\cos t, \qquad y=3\sin t
+\]
+
+con:
+\[
+t\in\left[0,\frac{\pi}{3}\right]
+\]
+
+La longitud de arco es:
+\[
+L=\int_0^{\pi/3}
+\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\,dt
+\]
+
+\[
+= \int_0^{\pi/3} 3\,dt
+=3\left[\frac{\pi}{3}\right]
+=\pi
+\]
+
+\bigskip
+
+\textbf{Método 2: Fórmula del arco de circunferencia}
+
+\[
+L=r\theta
+\]
+
+\[
+\theta=60^\circ=\frac{\pi}{3}
+\]
+
+\[
+L=3\cdot\frac{\pi}{3}=\pi
+\]
+
+\[
+\boxed{L=\pi}
+\]
+
+\end{document}

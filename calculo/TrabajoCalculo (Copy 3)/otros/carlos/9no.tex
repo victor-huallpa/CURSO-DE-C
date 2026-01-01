@@ -1,0 +1,75 @@
+\nopagebreak
+
+La región está limitada por la curva \(f(x)=16-2x^2\), el eje \(x\) y las rectas
+\(x=1\) y \(x=4\).  
+
+Dividimos el intervalo \([1,4]\) en \(n\) partes iguales:
+\[
+\Delta x = \frac{4-1}{n} = \frac{3}{n}.
+\]
+
+Tomando puntos derechos:
+\[
+x_i = 1 + \frac{3i}{n}.
+\]
+
+El área se expresa como límite de sumas de Riemann:
+\[
+A = \lim_{n\to\infty} \sum_{i=1}^{n} (16 - 2 x_i^2)\Delta x.
+\]
+
+Sustituyendo \(x_i\):
+\[
+A = \lim_{n\to\infty} \sum_{i=1}^{n} \left[16 - 2\left(1 + \frac{3i}{n}\right)^2 \right] \frac{3}{n}.
+\]
+
+Expandimos el cuadrado:
+\[
+\left(1 + \frac{3i}{n}\right)^2 = 1 + \frac{6i}{n} + \frac{9i^2}{n^2}.
+\]
+
+Sustituyendo:
+\[
+16 - 2\left(1 + \frac{6i}{n} + \frac{9i^2}{n^2}\right)
+= 16 - 2 - \frac{12 i}{n} - \frac{18 i^2}{n^2} 
+= 14 - \frac{12 i}{n} - \frac{18 i^2}{n^2}.
+\]
+
+Multiplicando por \(\Delta x = \frac{3}{n}\):
+\[
+\sum_{i=1}^{n} (16 - 2x_i^2)\Delta x
+= \sum_{i=1}^{n} \left( \frac{42}{n} - \frac{36 i}{n^2} - \frac{54 i^2}{n^3} \right).
+\]
+
+Separando sumas:
+\[
+A = \lim_{n\to\infty} \left[
+\frac{42}{n}\sum_{i=1}^{n}1
+- \frac{36}{n^2}\sum_{i=1}^{n} i
+- \frac{54}{n^3}\sum_{i=1}^{n} i^2
+\right].
+\]
+
+Usando sumas conocidas:
+\[
+\sum_{i=1}^{n}1 = n, \quad
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}, \quad
+\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}.
+\]
+
+Sustituyendo:
+\[
+A = \lim_{n\to\infty} \left[
+42 - 18\frac{n+1}{n} - 9\frac{(n+1)(2n+1)}{n^2}
+\right].
+\]
+
+Simplificando el límite:
+\[
+A = 42 - 18 - 18 = 6.
+\]
+
+Finalmente:
+\[
+\boxed{A = 6}
+\]

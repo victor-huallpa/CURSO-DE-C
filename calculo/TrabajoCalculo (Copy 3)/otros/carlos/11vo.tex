@@ -1,0 +1,44 @@
+\textbf{Área de la región}
+\nopagebreak
+
+La región está limitada por la curva \(y = \tan(x)\), el eje \(x\) y las rectas
+\(x = 0\) y \(x = \frac{\pi}{3}\).  
+
+Dividimos el intervalo \([0, \frac{\pi}{3}]\) en \(n\) partes iguales:
+\[
+\Delta x = \frac{\frac{\pi}{3} - 0}{n} = \frac{\pi}{3n}.
+\]
+
+Tomando puntos derechos:
+\[
+x_i = \frac{i \pi}{3n}.
+\]
+
+El área se expresa como límite de sumas de Riemann:
+\[
+A = \lim_{n \to \infty} \sum_{i=1}^{n} \tan\left(\frac{i \pi}{3n}\right) \Delta x.
+\]
+
+Sustituyendo \(\Delta x = \frac{\pi}{3n}\):
+\[
+A = \lim_{n \to \infty} \sum_{i=1}^{n} \tan\left(\frac{i \pi}{3n}\right) \cdot \frac{\pi}{3n}.
+\]
+
+Esta es la expresión de la integral como suma de Riemann. Evaluando la integral:
+
+\[
+A = \int_0^{\frac{\pi}{3}} \tan(x) \, dx
+= \left[-\ln|\cos(x)|\right]_0^{\frac{\pi}{3}}.
+\]
+
+Sustituyendo los límites de integración:
+\[
+A = -\ln|\cos(\frac{\pi}{3})| + \ln|\cos(0)|
+= -\ln\left(\frac{1}{2}\right) + \ln(1)
+= \ln(2).
+\]
+
+Finalmente:
+\[
+\boxed{A = \ln(2)}.
+\]

@@ -1,0 +1,42 @@
+$\displaystyle \mathbf{\sum_{i=1}^{n} \sin^{i}(ax)}$
+\nopagebreak
+
+Sea \(r=\sin(ax)\).
+
+\[
+r^{i+1}-r^{i}=r^{i}(r-1).
+\]
+
+Despejando:
+\[
+r^{i}=\frac{r^{i+1}-r^{i}}{r-1}.
+\]
+
+Sumando de \(i=1\) a \(n\):
+\[
+\sum_{i=1}^{n} r^{i}
+=
+\frac{1}{r-1}\sum_{i=1}^{n}(r^{i+1}-r^{i}).
+\]
+
+La suma telescópica cumple:
+\[
+\sum_{i=1}^{n}(r^{i+1}-r^{i})
+= r^{n+1}-r.
+\]
+
+Sustituyendo \(r=\sin(ax)\):
+\[
+\sum_{i=1}^{n} \sin^{i}(ax)
+=
+\frac{\sin^{n+1}(ax)-\sin(ax)}{\sin(ax)-1}.
+\]
+
+Factorizando:
+\[
+\boxed{
+\sum_{i=1}^{n} \sin^{i}(ax)
+=
+\frac{\sin(ax)\,\big(\sin^{n}(ax)-1\big)}{\sin(ax)-1}
+}
+\]

@@ -1,0 +1,22 @@
+$\displaystyle \mathbf{ \int 
+       \sqrt{x + 3} \left(x + 1\right)^{2} 
+    \,dx}$ 
+\nopagebreak
+\begin{align*}
+\text{Sustituyendo: } &u = x + 3 
+\;\;\Rightarrow\; du = dx \\[6pt]
+\int \sqrt{x + 3} \left(x + 1\right)^{2} \,dx
+&= \int \left(u - 2\right)^{2} \sqrt{u} \, du \\[6pt]
+&= \int u^{\frac{5}{2}} - 4u^{\frac{3}{2}} + 4 \sqrt{u}du\\[6pt]
+&= \frac{2u^{\frac{7}{2}}}{7} - \frac{8u^{\frac{5}{2}}}{5} + \frac{8u^{\frac{3}{2}}}{3}\\[6pt]
+&= \frac{2 \left(x + 3\right)^{\frac{7}{2}}}{7}
+- \frac{8 \left(x + 3\right)^{\frac{5}{2}}}{5} 
++ \frac{8 \left(x + 3\right)^{\frac{3}{2}}}{3} + C\\[6pt]
+\text{Simplificando: }&= \frac{2 \left(x + 3\right)^{\frac{3}{2}} \left(15x^{2} + 6x + 23\right)}{105} + C\\[6pt]
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int \left(x + 1\right)^{2} \sqrt{x + 3}\,dx 
+= \frac{\left(x + 3\right)^{\frac{3}{2}} \left(30x^{2} + 12x + 46\right)}{105} + C
+}
+\]

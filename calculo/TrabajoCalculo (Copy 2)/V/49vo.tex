@@ -1,0 +1,41 @@
+$\displaystyle \mathbf{\int \frac{x^{3}\,dx}{\sqrt{x^{4}-2x^{2}-1}}}$
+
+\nopagebreak
+$$
+\text{Sea } u = x^{2} \Rightarrow du = 2x\,dx \Rightarrow x^{3}\,dx = \tfrac{u}{2}\,du.
+$$
+$$
+\Rightarrow\;
+\int \frac{x^{3}\,dx}{\sqrt{x^{4}-2x^{2}-1}}
+= \tfrac{1}{2}\int \frac{u\,du}{\sqrt{u^{2}-2u-1}}.
+$$
+$$
+\text{Completamos el cuadrado: } u^{2}-2u-1 = (u-1)^{2} - 2.
+$$
+$$
+\text{Sea } v = u - 1 \Rightarrow dv = du.
+$$
+$$
+\Rightarrow\;
+\tfrac{1}{2}\int \frac{v+1}{\sqrt{v^{2}-2}}\,dv
+= \tfrac{1}{2}\left(\int \frac{v}{\sqrt{v^{2}-2}}\,dv + \int \frac{dv}{\sqrt{v^{2}-2}}\right).
+$$
+$$
+\text{Sabemos que:}\quad
+\int \frac{v}{\sqrt{v^{2}-a^{2}}}\,dv = \sqrt{v^{2}-a^{2}}, \qquad
+\int \frac{dv}{\sqrt{v^{2}-a^{2}}} = \ln|v+\sqrt{v^{2}-a^{2}}| + C.
+$$
+$$
+\text{Aplicando con } a^{2}=2:\quad
+\tfrac{1}{2}\Big[\sqrt{v^{2}-2} + \ln|v+\sqrt{v^{2}-2}|\Big] + C.
+$$
+$$
+\text{Regresando a } x:\quad v = u - 1 = x^{2} - 1.
+$$
+$$
+\boxed{
+I_{49} =
+\tfrac{1}{2}\sqrt{x^{4}-2x^{2}-1}
++ \tfrac{1}{2}\ln\!\Big|x^{2}-1+\sqrt{x^{4}-2x^{2}-1}\Big| + C.
+}
+$$

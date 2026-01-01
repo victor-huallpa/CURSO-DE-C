@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Integrales Impropias}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Ejercicio 38}
+Calcular la integral impropia:
+\[
+\int_{1}^{+\infty} \frac{dx}{x^2}
+\]
+
+La integral es impropia debido a que el límite superior es infinito. Se procede a evaluarla como un límite.
+
+\[
+\int \frac{dx}{x^2} = \int x^{-2} dx = -x^{-1}
+\]
+
+Por lo tanto:
+\[
+\int_{1}^{+\infty} \frac{dx}{x^2}
+= \lim_{b \to +\infty} \left[ -\frac{1}{x} \right]_{1}^{b}
+\]
+
+\[
+= \lim_{b \to +\infty} \left(-\frac{1}{b} + 1\right) = 1
+\]
+
+La integral es convergente y su valor es:
+\[
+\boxed{1}
+\]
+
+\section*{Ejercicio 39}
+Calcular la integral impropia:
+\[
+\int_{-\infty}^{0} \frac{dx}{(4-x)^2}
+\]
+
+La integral es impropia debido al límite inferior infinito. Se realiza la sustitución:
+\[
+u = 4 - x \Rightarrow du = -dx
+\]
+
+Entonces:
+\[
+\int \frac{dx}{(4-x)^2} = -\int u^{-2} du = \frac{1}{u}
+\]
+
+Volviendo a la variable original:
+\[
+\frac{1}{4-x}
+\]
+
+Evaluando:
+\[
+\int_{-\infty}^{0} \frac{dx}{(4-x)^2}
+= \lim_{a \to -\infty} \left[ \frac{1}{4-x} \right]_{a}^{0}
+\]
+
+\[
+= \frac{1}{4} - \lim_{a \to -\infty} \frac{1}{4-a}
+= \frac{1}{4}
+\]
+
+La integral es convergente y su valor es:
+\[
+\boxed{\frac{1}{4}}
+\]
+
+\section*{Ejercicio 40}
+Calcular la integral impropia:
+\[
+\int_{0}^{1} \frac{dx}{\sqrt{x}}
+\]
+
+Esta integral es impropia porque la función no está definida en $x = 0$.
+
+\[
+\frac{1}{\sqrt{x}} = x^{-1/2}
+\]
+
+\[
+\int x^{-1/2} dx = 2x^{1/2}
+\]
+
+Evaluando mediante límites:
+\[
+\int_{0}^{1} \frac{dx}{\sqrt{x}}
+= \lim_{a \to 0^+} \left[2\sqrt{x}\right]_{a}^{1}
+\]
+
+\[
+= 2(1 - 0) = 2
+\]
+
+La integral es convergente y su valor es:
+\[
+\boxed{2}
+\]
+
+\end{document}

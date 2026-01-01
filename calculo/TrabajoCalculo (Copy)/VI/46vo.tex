@@ -1,0 +1,50 @@
+$\displaystyle \mathbf{\int \frac{x^{2}}{(x^{2}+2x+2)^{2}}\,dx}$
+
+\nopagebreak
+\text{Operando: Completamos el cuadrado del denominador:}
+
+$$
+x^{2}+2x+2 = (x+1)^{2}+1.
+$$
+
+\nopagebreak
+\text{Sustituimos } u = x+1, \ du = dx, \ x = u-1:
+
+$$
+\int \frac{x^{2}}{(x^{2}+2x+2)^{2}}\,dx
+= \int \frac{(u-1)^{2}}{(u^{2}+1)^{2}}\,du
+= \int \frac{u^{2}-2u+1}{(u^{2}+1)^{2}}\,du.
+$$
+
+\nopagebreak
+\text{Separamos la integral:}
+
+$$
+\int \frac{u^{2}-2u+1}{(u^{2}+1)^{2}}\,du
+= \int \frac{u^{2}+1}{(u^{2}+1)^{2}}\,du - 2\int \frac{u}{(u^{2}+1)^{2}}\,du
+= \int \frac{1}{u^{2}+1}\,du - 2\int \frac{u}{(u^{2}+1)^{2}}\,du.
+$$
+
+\nopagebreak
+\text{Integramos cada término:}
+
+$$
+\int \frac{1}{u^{2}+1}\,du = \arctan(u), \quad
+\int \frac{u}{(u^{2}+1)^{2}}\,du = \frac{-1}{2(u^{2}+1)}.
+$$
+
+\nopagebreak
+\text{Por tanto:}
+
+$$
+\int \frac{x^{2}}{(x^{2}+2x+2)^{2}}\,dx
+= \arctan(u) + \frac{1}{u^{2}+1} + C
+= \arctan(x+1) + \frac{1}{x^{2}+2x+2} + C.
+$$
+
+\nopagebreak
+\[
+\boxed{\displaystyle
+\int \frac{x^{2}}{(x^{2}+2x+2)^{2}}\,dx
+= \arctan(x+1) + \frac{1}{x^{2}+2x+2} + C}
+\]

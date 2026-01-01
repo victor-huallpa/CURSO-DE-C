@@ -1,0 +1,19 @@
+$\displaystyle \mathbf{\int \frac{e^{2x}}{e^{x} + 3}\,dx}$
+\nopagebreak
+\begin{align*}
+\text{Sustituyendo: } &u = e^{x} \;\;\Rightarrow\; du = e^{x}\,dx \\[6pt]
+\text{Entonces } &e^{2x} = (e^{x})^{2} = u^{2}, \quad dx = \frac{du}{u}. \\[6pt]
+\int \frac{e^{2x}}{e^{x} + 3}\,dx
+&= \int \frac{u^{2}}{u + 3}\cdot \frac{du}{u} \\[6pt]
+&= \int \frac{u}{u + 3}\,du \\[6pt]
+\text{Dividiendo: } &\frac{u}{u + 3} = 1 - \frac{3}{u + 3}. \\[6pt]
+\int \frac{e^{2x}}{e^{x} + 3}\,dx
+&= \int \left(1 - \frac{3}{u + 3}\right)\,du \\[6pt]
+&= \int 1\,du - 3\int \frac{1}{u + 3}\,du \\[6pt]
+&= u - 3\ln|u + 3| + C
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int \frac{e^{2x}}{e^{x} + 3}\,dx
+= e^{x} - 3\ln\bigl(e^{x} + 3\bigr) + C.}
+\]
