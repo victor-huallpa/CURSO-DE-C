@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
     bool condition = true; 
-    bool condition2 = true; 
+    // bool condition2 = true; 
     int cont = 5;
     int cont2 = 3;
 
@@ -15,17 +15,26 @@ int main() {
         if(cont == 0){
             condition = false;
         }
-    } while (condition);
+        
+    } while (false);
 
 
+    // codigo 
 
     while (condition2)
     {
-        cout << "hello" << endl;
-        cont2--;
-        if(cont2 == 0){
-            condition2 = false;
-        }
+        pedir datos
+       opciones
+       switch (expression)
+       {
+       case constant expression:
+        /* code */
+        break;
+       
+       default:
+        break;
+       }
+       
     }
     
 
