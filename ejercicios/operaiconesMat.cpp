@@ -33,6 +33,7 @@ int main() {
             cout<<"La resta es: "<< user1 - user2<<endl;
             break;
         case 3:
+            
             user1 = datos(1);
             user2 = datos(2);
             cout<<"La multiplicacion es: "<< user1 * user2<<endl;

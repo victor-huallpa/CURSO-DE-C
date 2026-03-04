@@ -21,10 +21,9 @@ int main() {
 
     // codigo 
 
-    while (condition2)
+    while (condition)
     {
-        pedir datos
-       opciones
+        
        switch (expression)
        {
        case constant expression:
