@@ -6,7 +6,8 @@ int main(){
     //variables
     bool condition = true;
     int numF;
-    int ini = 0;
+    int res = 0;
+    int in = 1;
     int des = 1;
     
     cout<<"Bienvenido a calculando primeros numeros de Fibonacci!"<<endl;
@@ -28,23 +29,27 @@ int main(){
 
         for (int i = 0; i < numF; i++)
         {
-            if (i < numF - 1)
+            if (i<numF-1)
             {
-                cout<<ini<<", ";
-                if (i != 0)
+                cout<<res<<", ";
+
+                if (i == 1)
                 {
-                    ini = des;
-                    des = ini + des;
+                    continue;
                 }
-                continue;
+            }else{
+                cout<<res<<endl;
             }
+            
+            // usamos varaible temporal
+            res = des;
+            des+=in;            
+            in = res;
 
-            cout << ini<<endl;
-            cout<<"son todos. "<<endl; 
-
-            ini = 0;
-            des = 1; 
         }
+        res = 0;
+        in = 1;
+        des = 1;
         
 
     }
