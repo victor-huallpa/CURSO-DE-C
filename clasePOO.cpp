@@ -1,51 +1,69 @@
 #include <iostream>
 #include <string>
-#include <cstring>
+
 using namespace std;
 
-
-
-class car
+//clase padre
+class Vehiculo
 {
 private:
-    /* data */
+    int anio;
+
 public:
-// atributos
     string color;
-    int anio = 2022;
-    char modelo[10];
-    char marca;
-//metodos
-    int acelarar(){
-        cout<<"acelerando";
-        return 0;
+    string modelo;
+    string marca;
+
+    void setAnio(int a){
+        anio = a;
+    }
+
+    int getAnio(){
+        return anio;
+    }
+
+    virtual void acelerar(){
+        cout<<"aceleracion normal"<<endl;
+    }
+};
+
+//clase hija
+class Moto : public Vehiculo
+{
+public:
+    int numLlantas = 2;
+    int numPersona = 2;
+
+    void equilibrio(){
+        cout<<"estas conduciendo"<<endl;
+    }
+
+    void acelerar(){
+        cout<<"aceleracion doble"<<endl;
     }
 };
 
 int main() {
-    //objeto instacado
-    car camion;
-    car camion2;
-    //asignarle valores a los atributos
+    Vehiculo* vehiculo;
 
-    cout<<camion.anio<<endl;
+    Vehiculo camion;
 
-    camion.anio = 2002;
+    Moto m1;
+
+    vehiculo = &m1;
+    vehiculo->acelerar();
+
+
+    camion.setAnio(2002);
     camion.color = "morado";
-    strcpy(camion.modelo, "f125");
-    camion.marca = 'T';
+    camion.modelo = "f125";
+    camion.marca = "Toyota";
 
-    cout<<camion.anio<<endl;
     cout<<camion.modelo<<endl;
     cout<<camion.color<<endl;
-    cout<<camion2.anio<<endl;
+    cout<<camion.getAnio()<<endl;
 
-    //metodos
-    camion2.acelarar();
-    camion.acelarar();
+    camion.acelerar();
 
     return 0;
 }
-
-
-
