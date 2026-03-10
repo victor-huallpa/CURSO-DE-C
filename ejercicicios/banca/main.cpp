@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Cliente.h"
+#include "Cuenta.h"
 
 using namespace std;
 
@@ -14,15 +14,23 @@ T pedirDato(string texto){
 
 int main(){
     //pedir datos
-    string nombre = pedirDato<string>("nombre");
-    int edad = pedirDato<int>("edad");
-    string dni = pedirDato<string>("dni");
-    int codigo = pedirDato<int>("codigo");
+    // string nombre = pedirDato<string>("nombre");
+    // int edad = pedirDato<int>("edad");
+    // string dni = pedirDato<string>("dni");
+    // int codigo = pedirDato<int>("codigo");
 
 
-    Cliente c1(nombre, edad, dni, codigo);
+    // Cliente c1(nombre, edad, dni, codigo);
 
-    c1.mostrarCliente();
+    // c1.mostrarCliente();
+
+    Cuenta c1(1001, 500);
+
+    c1.depositar(200);
+    c1.retirar(100);
+
+    c1.mostrarCenta();
+    
 
     return 0;
 }
