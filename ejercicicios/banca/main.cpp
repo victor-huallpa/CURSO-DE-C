@@ -17,11 +17,12 @@ int main(){
     string nombre = pedirDato<string>("nombre");
     int edad = pedirDato<int>("edad");
     string dni = pedirDato<string>("dni");
+    int codigo = pedirDato<int>("codigo");
 
 
-    Persona p1(nombre, edad, dni);
+    Cliente c1(nombre, edad, dni, codigo);
 
-    p1.mostrarDatos();
+    c1.mostrarCliente();
 
     return 0;
 }
