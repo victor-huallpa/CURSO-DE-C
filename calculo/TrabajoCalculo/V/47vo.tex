@@ -1,0 +1,24 @@
+$\displaystyle \mathbf{\int \frac{dx}{(5 - 4x - x^{2})^{3/2}}}$
+
+\nopagebreak
+$$
+\begin{aligned}
+&5 - 4x - x^{2} = 9 - (x + 2)^{2}. \\[4pt]
+\text{Sea } &u = x + 2 \;\Rightarrow\; du = dx. \\[4pt]
+\text{Sustitución trigonométrica: } &u = 3\sin\theta,\quad du = 3\cos\theta\,d\theta. \\[4pt]
+\text{Entonces: } &(9 - u^{2}) = 9\cos^{2}\theta. \\[4pt]
+\Rightarrow\;
+\frac{du}{(9 - u^{2})^{3/2}}
+= \frac{3\cos\theta}{(3\cos\theta)^{3}}\,d\theta
+= \frac{1}{9}\sec^{2}\theta\,d\theta. \\[6pt]
+\text{Integramos: } &
+\int \frac{du}{(9 - u^{2})^{3/2}}
+= \frac{1}{9}\int \sec^{2}\theta\,d\theta
+= \frac{1}{9}\tan\theta + C. \\[6pt]
+\text{Volviendo a } x: &
+\tan\theta = \frac{u}{\sqrt{9 - u^{2}}}
+= \frac{x + 2}{\sqrt{5 - 4x - x^{2}}}. \\[6pt]
+\boxed{\displaystyle
+I_{47} = \frac{x + 2}{9\sqrt{5 - 4x - x^{2}}} + C.}
+\end{aligned}
+$$

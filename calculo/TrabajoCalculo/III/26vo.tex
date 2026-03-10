@@ -1,0 +1,34 @@
+$\displaystyle \mathbf{\int x^{3} \sqrt{x+1}\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } &
+\text{Sea } u = x + 1 \implies du = dx, \; x = u - 1. \\[6pt]
+&\text{Entonces } x^{3} = (u - 1)^{3}, \ \sqrt{x+1} = \sqrt{u}. \\[6pt]
+\text{Sustituyendo: } &
+\int x^{3}\sqrt{x+1}\,dx
+= \int (u-1)^{3}u^{1/2}\,du \\[6pt]
+&= \int (u^{7/2} - 3u^{5/2} + 3u^{3/2} - u^{1/2})\,du. \\[6pt]
+\text{Integrando término a término: } &
+\int u^{7/2}\,du = \tfrac{2}{9}u^{9/2}, \quad
+\int u^{5/2}\,du = \tfrac{2}{7}u^{7/2}, \\[3pt]
+&\int u^{3/2}\,du = \tfrac{2}{5}u^{5/2}, \quad
+\int u^{1/2}\,du = \tfrac{2}{3}u^{3/2}. \\[6pt]
+\Rightarrow\quad
+\int x^{3}\sqrt{x+1}\,dx
+&= \tfrac{2}{9}u^{9/2}
+- \tfrac{6}{7}u^{7/2}
++ \tfrac{6}{5}u^{5/2}
+- \tfrac{2}{3}u^{3/2} + C. \\[8pt]
+\text{Volviendo a } x: &
+u = x + 1. \\[6pt]
+\Rightarrow\quad
+\int x^{3}\sqrt{x+1}\,dx
+&= \tfrac{2}{9}(x+1)^{9/2}
+\\[3pt]
+&\quad - \tfrac{6}{7}(x+1)^{7/2}
++ \tfrac{6}{5}(x+1)^{5/2}
+- \tfrac{2}{3}(x+1)^{3/2} + C.
+\end{aligned}
+$$

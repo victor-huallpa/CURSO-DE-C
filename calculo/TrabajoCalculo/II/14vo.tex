@@ -1,0 +1,19 @@
+$\displaystyle \mathbf{\int \frac{2^{x+1} - 5^{x-1}}{10^{x}}\,dx}$
+\nopagebreak
+\begin{align*}
+\text{Operando: } &2^{x+1} = 2\cdot 2^{x}, \quad 5^{x-1} = \frac{1}{5}\,5^{x}, \quad 10^{x}=2^{x}5^{x}. \\[6pt]
+&\frac{2^{x+1} - 5^{x-1}}{10^{x}}
+= \frac{2\cdot 2^{x}}{2^{x}5^{x}} - \frac{\tfrac{1}{5}\,5^{x}}{2^{x}5^{x}} \\[6pt]
+&= 2\cdot 5^{-x} - \frac{1}{5}\,2^{-x}. \\[6pt]
+\int \frac{2^{x+1} - 5^{x-1}}{10^{x}}\,dx
+&= \int \left(2\cdot 5^{-x} - \frac{1}{5}\,2^{-x}\right)\,dx \\[6pt]
+\text{Usando } &\int a^{-x}\,dx = -\frac{a^{-x}}{\ln a} + C, \\[6pt]
+\int \left(2\cdot 5^{-x} - \frac{1}{5}\,2^{-x}\right)\,dx
+&= 2\left(-\frac{5^{-x}}{\ln 5}\right) - \frac{1}{5}\left(-\frac{2^{-x}}{\ln 2}\right) + C \\[6pt]
+&= -\frac{2}{\ln 5}\,5^{-x} + \frac{1}{5\ln 2}\,2^{-x} + C
+\end{align*}
+\[
+\boxed{\displaystyle 
+\int \frac{2^{x+1} - 5^{x-1}}{10^{x}}\,dx
+= -\frac{2}{\ln 5}\,5^{-x} + \frac{1}{5\ln 2}\,2^{-x} + C.}
+\]

@@ -1,0 +1,53 @@
+$\displaystyle \mathbf{\int \frac{6x^{2} - 2x - 1}{4x^{3} - x}\,dx}$
+
+\nopagebreak
+\[
+\text{Factorizamos el denominador:}
+\]
+\[
+4x^{3} - x = x(2x - 1)(2x + 1)
+\]
+
+\[
+\text{Planteamos fracciones parciales:}
+\]
+\[
+\frac{6x^{2} - 2x - 1}{x(2x - 1)(2x + 1)}
+= \frac{A}{x} + \frac{B}{2x - 1} + \frac{C}{2x + 1}
+\]
+
+\[
+\text{Multiplicamos por el denominador común y comparamos coeficientes:}
+\]
+\[
+6x^{2} - 2x - 1 = A(2x - 1)(2x + 1) + Bx(2x + 1) + Cx(2x - 1)
+\]
+
+\[
+A = 1, \quad B = -\tfrac{1}{4}, \quad C = \tfrac{3}{4}
+\]
+
+\[
+\text{Sustituyendo en la integral:}
+\]
+\[
+\int \frac{6x^{2} - 2x - 1}{4x^{3} - x}\,dx
+= \int\!\left(\frac{1}{x} - \frac{1}{4(2x - 1)} + \frac{3}{4(2x + 1)}\right)dx
+\]
+
+\[
+\text{Integrando término a término:}
+\]
+\[
+I_{51}
+= \ln|x| - \tfrac{1}{4}\ln|2x - 1| + \tfrac{3}{4}\ln|2x + 1| + C
+\]
+
+\[
+\boxed{\displaystyle
+I_{51}
+= \frac{3}{4}\ln|2x + 1|
+- \frac{1}{4}\ln|2x - 1|
++ \ln|x| + C
+}
+\]

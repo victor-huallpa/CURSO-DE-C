@@ -1,0 +1,42 @@
+$\displaystyle \mathbf{\sum_{i=1}^{n} (\sqrt{9+x})^{\,i}}$
+\nopagebreak
+
+Sea \(r=\sqrt{9+x}\).
+
+\[
+r^{i+1}-r^{i}=r^{i}(r-1).
+\]
+
+Despejando:
+\[
+r^{i}=\frac{r^{i+1}-r^{i}}{r-1}.
+\]
+
+Sumando de \(i=1\) a \(n\):
+\[
+\sum_{i=1}^{n} r^{i}
+=
+\frac{1}{r-1}\sum_{i=1}^{n}(r^{i+1}-r^{i}).
+\]
+
+La suma telescópica cumple:
+\[
+\sum_{i=1}^{n}(r^{i+1}-r^{i})
+= r^{n+1}-r.
+\]
+
+Sustituyendo \(r=\sqrt{9+x}\):
+\[
+\sum_{i=1}^{n} (\sqrt{9+x})^{\,i}
+=
+\frac{(\sqrt{9+x})^{\,n+1}-\sqrt{9+x}}{\sqrt{9+x}-1}.
+\]
+
+Factorizando:
+\[
+\boxed{
+\sum_{i=1}^{n} (\sqrt{9+x})^{\,i}
+=
+\frac{\sqrt{9+x}\,\big((\sqrt{9+x})^{\,n}-1\big)}{\sqrt{9+x}-1}
+}
+\]

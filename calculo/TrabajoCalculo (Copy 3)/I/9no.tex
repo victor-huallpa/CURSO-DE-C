@@ -1,0 +1,24 @@
+$\displaystyle \mathbf{ \int 
+        \frac{ln^{2}x + 2}{x \left(1 - ln x \right)}
+    \,dx}$ 
+\nopagebreak
+\begin{align*}
+\int \frac{\ln^{2}x + 2}{x \left(1 - \ln x \right)}\, dx
+&= -\int \frac{\ln^{2}x + 2}{x \left(\ln x - 1\right)}\, dx \\[6pt]
+\text{Sustituyendo: } &u = \ln x -1
+\;\;\Rightarrow\; du = \frac{dx}{x}
+\;\;\Rightarrow\; \ln^{2}x = \left(u+1\right)^{2} \\[6pt]
+\int \frac{\ln^{2}x + 2}{x \left(1 - \ln x \right)}\, dx
+&= -\int \frac{\left(u + 1\right)^{2} + 2}{u} \, du\\[6pt]
+&= -\int u + \frac{3}{u} + 2\, du \\[6pt]
+&= -3 \ln u - \frac{u^{2}}{2} - 2u \\[6pt]
+&= -3 \ln\left|\ln x - 1\right| - 2 \left(\ln x - 1\right) - \frac{\left(\ln x - 1\right)^{2}}{2} + C \\[6pt]
+&= -3 \ln\left|\ln x - 1\right| - \frac{1}{2} \ln x \left(\ln x + 2\right) + C
+\end{align*}
+\[
+\boxed{\displaystyle \int
+    \frac{\ln^{2}x + 2}{x \left(1 - \ln x \right)}
+    \,dx 
+    = -3 \ln\left|\ln x - 1\right| - \frac{1}{2} \ln x \left(\ln x + 2\right) + C
+}
+\]  

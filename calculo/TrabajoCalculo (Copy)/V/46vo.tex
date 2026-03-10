@@ -1,0 +1,21 @@
+$\displaystyle \mathbf{\int \frac{x\,dx}{(7+4x+x^{2})^{3/2}}}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Sea } &u = x + 2 \;\Rightarrow\; x = u - 2,\quad du = dx. \\[4pt]
+\text{Entonces: } &7 + 4x + x^{2} = u^{2} + 3. \\[4pt]
+\Rightarrow &
+I_{46} = \int \frac{u - 2}{(u^{2}+3)^{3/2}}\,du
+= \int \frac{u}{(u^{2}+3)^{3/2}}\,du - 2\int \frac{du}{(u^{2}+3)^{3/2}}. \\[6pt]
+\text{La primera integral es: } &
+\int \frac{u}{(u^{2}+3)^{3/2}}\,du = -\frac{1}{\sqrt{u^{2}+3}}. \\[4pt]
+\text{La segunda integral es: } &
+\int \frac{du}{(u^{2}+3)^{3/2}} = \frac{u}{3\sqrt{u^{2}+3}}. \\[6pt]
+\text{Por tanto: } &
+I_{46} = -\frac{1}{\sqrt{u^{2}+3}} - \frac{2u}{3\sqrt{u^{2}+3}} + C. \\[4pt]
+\text{Regresando a } x: &
+\boxed{\displaystyle I_{46}
+= -\frac{1}{\sqrt{(x+2)^{2}+3}} - \frac{2(x+2)}{3\sqrt{(x+2)^{2}+3}} + C.}
+\end{aligned}
+$$

@@ -1,0 +1,46 @@
+
+\nopagebreak
+
+La región está limitada por la curva \(y=5\sqrt{x}\), el eje \(x\) y las rectas
+\(x=1\) y \(x=4\).  
+
+Dividimos el intervalo \([1,4]\) en \(n\) partes iguales:
+\[
+\Delta x = \frac{4-1}{n} = \frac{3}{n}.
+\]
+
+Tomando puntos derechos:
+\[
+x_i = 1 + \frac{3i}{n}.
+\]
+
+El área se expresa como límite de sumas de Riemann:
+\[
+A = \lim_{n\to\infty} \sum_{i=1}^{n} 5\sqrt{x_i} \, \Delta x.
+\]
+
+Sustituyendo \(x_i\):
+\[
+A = \lim_{n\to\infty} \sum_{i=1}^{n} 5 \sqrt{1 + \frac{3i}{n}} \cdot \frac{3}{n}.
+\]
+
+Simplificando:
+\[
+A = \lim_{n\to\infty} \sum_{i=1}^{n} \frac{15}{n} \sqrt{1 + \frac{3i}{n}}.
+\]
+
+Este es el **límite de sumas de Riemann** que representa el área exacta.  
+
+Opcionalmente, evaluando la integral:
+\[
+A = \int_{1}^{4} 5\sqrt{x}\,dx
+= 5 \int_{1}^{4} x^{1/2}\,dx
+= 5 \left[ \frac{2}{3} x^{3/2} \right]_1^4
+= \frac{10}{3} \left( 8 - 1 \right)
+= \frac{70}{3}.
+\]
+
+Finalmente:
+\[
+\boxed{A = \frac{70}{3}}
+\]

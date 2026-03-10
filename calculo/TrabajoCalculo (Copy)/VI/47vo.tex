@@ -1,0 +1,49 @@
+$
+\int \frac{x^{5} + 2x^{3} + 4x + 4}{x^{4} + 2x^{3} + 2x^{2}} \, dx
+$
+
+\[
+\text{Paso 1: Factorizamos el denominador: } 
+x^{4} + 2x^{3} + 2x^{2} = x^{2}(x^{2} + 2x + 2)
+\]
+
+\[
+\text{Paso 2: Dividimos y separamos en integrales: }
+\frac{x^{5}+2x^{3}+4x+4}{x^{2}(x^{2}+2x+2)}
+= \frac{x^{3} - x + 4}{x^{2}} + \frac{4}{x^{2}(x^{2}+2x+2)}
+\]
+
+\[
+\text{Por lo tanto: }
+\int \frac{x^{5}+2x^{3}+4x+4}{x^{4}+2x^{3}+2x^{2}} \, dx
+= \int \Big(x - \frac{1}{x} + \frac{4}{x^{2}}\Big) dx
++ \int \frac{4}{x^{2}(x^{2}+2x+2)} dx
+\]
+
+\[
+\text{Paso 3: Integramos la primera parte: }
+\int \Big(x - \frac{1}{x} + \frac{4}{x^{2}}\Big) dx
+= \frac{x^{2}}{2} - \ln|x| - \frac{4}{x}
+\]
+
+\[
+\text{Paso 4: Para la segunda integral, completamos el cuadrado: }
+x^{2} + 2x + 2 = (x+1)^{2} + 1
+\]
+
+\[
+\int \frac{4}{x^{2}((x+1)^{2}+1)} dx
+= 2\ln(x^{2}+2x+2) - 2\arctan(x+1)
+\quad \text{(resultado de fracciones parciales)}
+\]
+
+\[
+\text{Paso 5: Sumamos todas las partes: }
+\]
+
+\[
+\boxed{
+\int \frac{x^{5} + 2x^{3} + 4x + 4}{x^{4} + 2x^{3} + 2x^{2}} \, dx
+= \frac{x^{2}}{2} - \ln|x| - \frac{4}{x} + 2\ln(x^{2}+2x+2) - 2\arctan(x+1) + C
+}
+\]

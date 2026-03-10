@@ -1,0 +1,59 @@
+\nopagebreak
+
+La región está limitada por la curva \(y=5-6x\), el eje \(x\) y las rectas
+\(x=1\) y \(x=5\).  
+Como \(5-6x<0\) en \([1,5]\), el área se calcula usando el valor absoluto:
+\[
+A=\int_{1}^{5}(6x-5)\,dx.
+\]
+
+Dividimos el intervalo \([1,5]\) en \(n\) partes iguales:
+\[
+\Delta x=\frac{5-1}{n}=\frac{4}{n}.
+\]
+
+Tomando puntos derechos:
+\[
+x_i = 1 + \frac{4i}{n}.
+\]
+
+El área se expresa como límite de sumas de Riemann:
+\[
+A=\lim_{n\to\infty}\sum_{i=1}^{n}(6x_i-5)\Delta x.
+\]
+
+Sustituyendo:
+\[
+A=\lim_{n\to\infty}\sum_{i=1}^{n}
+\left[6\left(1+\frac{4i}{n}\right)-5\right]\frac{4}{n}.
+\]
+\[
+A=\lim_{n\to\infty}\sum_{i=1}^{n}
+\left(1+\frac{24i}{n}\right)\frac{4}{n}.
+\]
+\[
+A=\lim_{n\to\infty}
+\left[
+\frac{4}{n}\sum_{i=1}^{n}1
++
+\frac{96}{n^2}\sum_{i=1}^{n}i
+\right].
+\]
+
+Usando:
+\[
+\sum_{i=1}^{n}1=n,
+\qquad
+\sum_{i=1}^{n}i=\frac{n(n+1)}{2},
+\]
+
+se obtiene:
+\[
+A=\lim_{n\to\infty}
+\left[
+4 + 48\frac{n+1}{n}
+\right].
+\]
+\[
+\boxed{A=52}
+\]

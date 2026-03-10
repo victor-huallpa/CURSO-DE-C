@@ -1,0 +1,30 @@
+$\displaystyle \mathbf{\int \frac{\sqrt{9-x^{2}}}{x^{2}}\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Sustitución trigonométrica: } &
+x = 3\sin\theta, \quad dx = 3\cos\theta\,d\theta. \\[4pt]
+\text{Triángulo: } &
+\text{hipotenusa } 3,\; \text{opuesto } x,\; \text{adyacente } \sqrt{9-x^{2}}. \\[6pt]
+\text{Sustituyendo: } &
+\frac{\sqrt{9-x^{2}}}{x^{2}}\,dx
+= \frac{3\cos\theta}{9\sin^{2}\theta}\cdot 3\cos\theta\,d\theta
+= \cot^{2}\theta\,d\theta. \\[6pt]
+\text{Integramos: } &
+\int \cot^{2}\theta\,d\theta
+= \int (\csc^{2}\theta - 1)\,d\theta
+= -\cot\theta - \theta + C. \\[6pt]
+\text{Regresando a } x: &
+\cot\theta = \frac{\sqrt{9-x^{2}}}{x}, \quad 
+\theta = \arcsin\!\left(\frac{x}{3}\right). \\[4pt]
+\Rightarrow &
+\int \frac{\sqrt{9-x^{2}}}{x^{2}}\,dx
+= -\frac{\sqrt{9-x^{2}}}{x} - \arcsin\!\left(\frac{x}{3}\right) + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+I_{45} = -\frac{\sqrt{9-x^{2}}}{x} - \arcsin\!\left(\frac{x}{3}\right) + C}
+$$

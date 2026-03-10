@@ -1,0 +1,45 @@
+$\displaystyle \mathbf{\int \frac{x^{3} - 2x}{x^{4} - 81}\,dx}$
+
+\nopagebreak
+\[
+\text{Factorizamos el denominador: } x^{4} - 81 = (x - 3)(x + 3)(x^{2} + 9)
+\]
+
+\[
+\text{Planteamos fracciones parciales: }
+\frac{x^{3} - 2x}{(x - 3)(x + 3)(x^{2} + 9)}
+= \frac{A}{x - 3} + \frac{B}{x + 3} + \frac{Cx + D}{x^{2} + 9}
+\]
+
+\[
+\text{Multiplicamos por el denominador común y comparamos coeficientes:}
+\]
+
+\[
+x^{3} - 2x = A(x + 3)(x^{2} + 9) + B(x - 3)(x^{2} + 9) + (Cx + D)(x - 3)(x + 3)
+\]
+
+\[
+\text{Resolviendo el sistema obtenemos: } A = \frac{7}{36}, \ B = \frac{7}{36}, \ C = \frac{11}{36}, \ D = 0
+\]
+
+\[
+\text{Sustituyendo en la integral: }
+\int \frac{x^{3} - 2x}{x^{4} - 81}\,dx
+= \int \frac{7/36}{x - 3} dx + \int \frac{7/36}{x + 3} dx + \int \frac{11/36\, x}{x^{2} + 9} dx
+\]
+
+\[
+\text{Integrando término a término: }
+\]
+
+\[
+I = \frac{7}{36}\ln|x - 3| + \frac{7}{36}\ln|x + 3| + \frac{11}{72}\ln(x^{2} + 9) + C
+\]
+
+\[
+\boxed{\displaystyle
+\int \frac{x^{3} - 2x}{x^{4} - 81}\,dx
+= \frac{7\ln|x - 3| + 7\ln|x + 3| + 11\ln(x^{2} + 9)}{36} + C
+}
+\]

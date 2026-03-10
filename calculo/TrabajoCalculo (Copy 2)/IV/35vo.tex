@@ -1,0 +1,95 @@
+$\displaystyle \mathbf{\int \cos^{6}\!\left(3x\right)\,dx}$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Operando: } &
+\text{Usamos identidades de reducción de potencias.} \\[6pt]
+&\cos^{6}\theta = \Big(\tfrac{1+\cos 2\theta}{2}\Big)^{3}
+= \tfrac{1}{8}\big(1+3\cos 2\theta +3\cos^{2}2\theta +\cos^{3}2\theta\big). \\[6pt]
+\text{Reducimos potencias: } &
+\cos^{2}2\theta = \tfrac{1+\cos 4\theta}{2}, \\[4pt]
+&\cos^{3}2\theta = \tfrac{3}{4}\cos 2\theta + \tfrac{1}{4}\cos 6\theta. \\[6pt]
+\text{Sustituyendo y simplificando: } &
+\cos^{6}\theta
+= \tfrac{5}{16} + \tfrac{15}{32}\cos 2\theta + \tfrac{3}{16}\cos 4\theta + \tfrac{1}{32}\cos 6\theta. \\[8pt]
+\text{Ahora tomamos } \theta=3x: &
+\cos^{6}(3x)
+= \tfrac{5}{16} + \tfrac{15}{32}\cos 6x + \tfrac{3}{16}\cos 12x + \tfrac{1}{32}\cos 18x. \\[8pt]
+\text{Integramos término a término: } &
+\int \cos^{6}(3x)\,dx
+= \tfrac{5x}{16}
++ \tfrac{15}{32}\cdot\tfrac{\sin 6x}{6}
++ \tfrac{3}{16}\cdot\tfrac{\sin 12x}{12}
++ \tfrac{1}{32}\cdot\tfrac{\sin 18x}{18} + C \\[6pt]
+&= \tfrac{5x}{16}
++ \tfrac{5}{64}\sin 6x
++ \tfrac{1}{64}\sin 12x
++ \tfrac{1}{576}\sin 18x + C.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle 
+\int \cos^{6}\!\left(3x\right)\,dx
+= \frac{5x}{16}
++ \frac{5}{64}\sin\!\left(6x\right)
++ \frac{1}{64}\sin\!\left(12x\right)
++ \frac{1}{576}\sin\!\left(18x\right) + C}
+$$
+
+\nopagebreak
+$$
+\begin{aligned}
+\text{Comprobación — forma alternativa: } &\\[6pt]
+\text{Multiplicamos la expresión anterior por }576: &\\[4pt]
+576\cdot\Big(\tfrac{5x}{16}\Big) &= 180x, \\[2pt]
+576\cdot\Big(\tfrac{5}{64}\sin 6x\Big) &= 45\sin 6x, \\[2pt]
+576\cdot\Big(\tfrac{1}{64}\sin 12x\Big) &= 9\sin 12x, \\[2pt]
+576\cdot\Big(\tfrac{1}{576}\sin 18x\Big) &= \sin 18x.
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\text{Por tanto el numerador (multiplicando por 576) es } &\\[4pt]
+&180x + 45\sin 6x + 9\sin 12x + \sin 18x.
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\text{Usando la identidad de ángulo triple } &\sin(3\theta)=3\sin\theta-4\sin^{3}\theta,
+\ \theta=6x: \\[4pt]
+\sin 18x &= 3\sin 6x - 4\sin^{3}6x.
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\text{Sustituyendo: } &\\[4pt]
+180x + 45\sin 6x + 9\sin 12x + \sin 18x
+&= 180x + 45\sin 6x + 9\sin 12x + (3\sin 6x - 4\sin^{3}6x) \\[4pt]
+&= 180x + 48\sin 6x + 9\sin 12x - 4\sin^{3}6x,
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\text{por lo que} \quad &
+\frac{180x + 45\sin 6x + 9\sin 12x + \sin 18x}{576} \\[4pt]
+&= \frac{180x + 48\sin 6x + 9\sin 12x - 4\sin^{3}6x}{576}.
+\end{aligned}
+$$
+
+$$
+\boxed{\displaystyle
+\frac{5x}{16}
++ \frac{5}{64}\sin 6x
++ \frac{1}{64}\sin 12x
++ \frac{1}{576}\sin 18x
+\;=\;
+\frac{9 \sin(12x) - 4 \sin^{3}(6x) + 48 \sin(6x) + 180x}{576}
+}
+$$
+

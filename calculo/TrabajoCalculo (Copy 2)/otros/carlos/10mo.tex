@@ -1,0 +1,57 @@
+\nopagebreak
+
+La región está limitada por la curva \(y = 5 - |x|\), el eje \(x\) y las rectas
+\(x=-5\) y \(x=5\).  
+
+Debido a la simetría, podemos integrar de \(0\) a \(5\) y multiplicar por 2:
+\[
+A = 2 \int_{0}^{5} (5 - x) \, dx.
+\]
+
+Dividimos el intervalo \([0,5]\) en \(n\) partes iguales:
+\[
+\Delta x = \frac{5-0}{n} = \frac{5}{n}.
+\]
+
+Tomando puntos derechos:
+\[
+x_i = 0 + \frac{5i}{n} = \frac{5i}{n}.
+\]
+
+El área se expresa como límite de sumas de Riemann:
+\[
+A = 2 \lim_{n \to \infty} \sum_{i=1}^{n} \left(5 - x_i\right) \Delta x.
+\]
+
+Sustituyendo \(x_i\):
+\[
+A = 2 \lim_{n \to \infty} \sum_{i=1}^{n} \left(5 - \frac{5i}{n}\right) \frac{5}{n}.
+\]
+
+Simplificando:
+\[
+A = 2 \lim_{n \to \infty} \sum_{i=1}^{n} \left(\frac{25}{n} - \frac{25i}{n^2}\right).
+\]
+
+Separando sumas:
+\[
+A = 2 \lim_{n \to \infty} \left[
+\frac{25}{n} \sum_{i=1}^{n} 1 - \frac{25}{n^2} \sum_{i=1}^{n} i
+\right].
+\]
+
+Usando:
+\[
+\sum_{i=1}^{n} 1 = n, \quad \sum_{i=1}^{n} i = \frac{n(n+1)}{2},
+\]
+
+se obtiene:
+\[
+A = 2 \lim_{n \to \infty} \left[ 25 - \frac{25(n+1)}{2n} \right]
+= 2 \cdot \frac{25}{2} = 25.
+\]
+
+Finalmente:
+\[
+\boxed{A = 25}
+\]

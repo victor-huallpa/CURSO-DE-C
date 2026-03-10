@@ -1,0 +1,66 @@
+$\displaystyle \mathbf{\sum_{i=1}^{n} i^5}$ 
+\nopagebreak
+
+\[
+(i+1)^6 - i^6.
+\]
+\[
+(i+1)^6
+= i^6 + 6i^5 + 15i^4 + 20i^3 + 15i^2 + 6i + 1,
+\]
+\[
+(i+1)^6 - i^6
+= 6i^5 + 15i^4 + 20i^3 + 15i^2 + 6i + 1.
+\]
+\[
+i^5
+= \frac{1}{6}\big[(i+1)^6 - i^6\big]
+- \frac{15}{6}i^4
+- \frac{20}{6}i^3
+- \frac{15}{6}i^2
+- i
+- \frac{1}{6}.
+\]
+
+Sumando de \(i=1\) a \(n\):
+\[
+\sum_{i=1}^{n} i^5
+=
+\frac{1}{6}\sum_{i=1}^{n}\big[(i+1)^6 - i^6\big]
+-\frac{15}{6}\sum_{i=1}^{n} i^4
+-\frac{20}{6}\sum_{i=1}^{n} i^3
+-\frac{15}{6}\sum_{i=1}^{n} i^2
+-\sum_{i=1}^{n} i
+-\sum_{i=1}^{n} \frac{1}{6}.
+\]
+
+La suma telescópica cumple:
+\[
+\sum_{i=1}^{n}\big[(i+1)^6 - i^6\big] = (n+1)^6 - 1.
+\]
+
+Usando sumas básicas:
+\[
+\sum i = \frac{n(n+1)}{2}, \quad
+\sum i^2 = \frac{n(n+1)(2n+1)}{6},
+\]
+\[
+\sum i^3 = \left(\frac{n(n+1)}{2}\right)^2, \quad
+\sum \frac{1}{6} = \frac{n}{6}.
+\]
+
+Además,
+\[
+\sum_{i=1}^{n} i^4
+= \frac{n(n+1)(2n+1)(3n^2+3n-1)}{30}.
+\]
+
+Sustituyendo y simplificando:
+\[
+\boxed{
+\sum_{i=1}^{n} i^5
+=
+\frac{n^2 (n+1)^2 (2n^2+2n-1)}{12}
+}
+\]
+

@@ -1,0 +1,19 @@
+$\displaystyle \int_{2}^{4}\frac{e^{\ln x}}{x^2+7}\,dx$
+
+\nopagebreak
+\begin{align*}
+\text{Simplificamos el integrando: } e^{\ln x} = x. \\
+I &= \int_{2}^{4} \frac{x}{x^2+7} \, dx \\
+\text{Sustitución: } u = x^2+7 \implies du = 2x \, dx \implies x \, dx = du/2. \\
+\text{Límites: } x=2 \to u=11; \quad x=4 \to u=23. \\
+I &= \int_{11}^{23} \frac{1}{u} \frac{du}{2} = \frac{1}{2} [\ln|u|]_{11}^{23} \\
+&= \frac{1}{2} (\ln 23 - \ln 11) = \frac{1}{2} \ln \frac{23}{11}
+\end{align*}
+
+\[
+\boxed{\displaystyle \frac{1}{2} \ln \frac{23}{11}}
+\]
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{Graficas/ejer13.png}
+\end{center}
