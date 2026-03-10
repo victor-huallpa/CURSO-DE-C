@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Persona.h"
+#include "Cliente.h"
 
 using namespace std;
 
