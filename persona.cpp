@@ -13,11 +13,12 @@ class Persona
         int edad;
     public:
         //metodos
+        // seters
         void setDatos(string n, int e){
             nombre = n;
             edad = e;
         }
-
+        //geters
         int getEdad(){
             return edad;
         }
@@ -29,4 +30,11 @@ class Persona
 };
 
 //clase hija
-
+int main(){
+    int ed;
+    Persona p1;
+    p1.setDatos("victor", 25);
+    ed = p1.getEdad();
+    cout<<p1.getEdad();;
+    return 0;
+}
