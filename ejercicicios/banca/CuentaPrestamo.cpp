@@ -3,7 +3,9 @@
 
 using namespace std;
 
-CuentaPrestamo::CuentaPrestamo(int numeroCuenta, double saldo, double deuda){
+CuentaPrestamo::CuentaPrestamo(int numeroCuenta, double saldo, double deuda)
+: Cuenta(numeroCuenta, saldo)
+{
     this->deuda = deuda;
 }
 
