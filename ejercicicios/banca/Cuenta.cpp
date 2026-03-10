@@ -22,6 +22,6 @@ void Cuenta::retirar(double monto){
 
 // mostar datos de cuenta
 void Cuenta::mostrarCenta(){
-    cout << "Numeor de cuenta: " << numeroCuenta << endl;
+    cout << "Numero de cuenta: " << numeroCuenta << endl;
     cout << "Saldo: "<< saldo<<endl;
 }
