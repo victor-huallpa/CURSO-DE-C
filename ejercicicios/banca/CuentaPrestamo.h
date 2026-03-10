@@ -3,19 +3,16 @@
 
 #include "Cuenta.h"
 
-class CuentaPrestamo
-{
-private:
-    // atributos
-    double deuda;
-public:
-//metodos
-CuentaPrestamo(int numeroCuenta, double saldo, double deuda);
+class CuentaPrestamo : public Cuenta {
 
-void pagarPrestamo(double monto);
+private:
+    double deuda;
+
+public:
+    CuentaPrestamo(int numeroCuenta, double saldo, double deuda);
+
+    void pagarPrestamo(double monto);
 
 };
-
-
 
 #endif
