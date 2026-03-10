@@ -6,17 +6,16 @@
 
 using namespace std;
 
-class Cliente : public Persona
-{
+class Cliente : public Persona {
+
 private:
     int codigoCliente;
-    
+
 public:
     Cliente(string nombre, int edad, string dni, int codigoCliente);
+
     void mostrarCliente();
+
 };
-
-
-
 
 #endif
