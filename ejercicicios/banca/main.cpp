@@ -1,0 +1,27 @@
+#include <iostream>
+#include "Persona.h"
+
+using namespace std;
+
+template <typename T>
+T pedirDato(string texto){
+    T valor;
+    cout << "Ingrese " << texto << ": ";
+    cin >> valor;
+    return valor;
+}
+
+int main(){
+    //pedir datos
+    string nombre = pedirDato<string>("nombre");
+    int edad = pedirDato<int>("edad");
+    string dni = pedirDato<string>("dni");
+
+
+    Persona p1(nombre, edad, dni);
+
+    p1.mostrarDatos();
+
+    return 0;
+}
+
