@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//template de funcion(no esta defifdo que retornara hasta que se use).
 template <typename T>
 T pedirDato(string texto){
     T valor;
