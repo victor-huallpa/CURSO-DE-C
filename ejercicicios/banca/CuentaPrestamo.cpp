@@ -10,9 +10,20 @@ CuentaPrestamo::CuentaPrestamo(int numeroCuenta, double saldo, double deuda)
 }
 
 void CuentaPrestamo::pagarPrestamo(double monto){
-    deuda -= monto;
+    if (deuda >= monto)
+    {
+        deuda -= monto;
+        cout<<"deuda: : "<<deuda<<endl;
 
-    if(deuda < 0){
-        deuda = 0;
+    }else if (deuda == 0)
+    {
+        cout<<"Usted no tiene deuda"<<endl;
+    }else{
+        int restante = monto - deuda;
+        monto -= restante;
+        deuda -= monto;
+        cout<<"Cambio: "<<restante<<endl;
+        cout<<"deuda: : "<<deuda<<endl;
     }
+    
 }
