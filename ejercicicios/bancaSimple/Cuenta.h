@@ -9,6 +9,8 @@ private:
 
 public:
     void mostrar();
+
+    void setDatos(int n, double s);
 };
 
 
