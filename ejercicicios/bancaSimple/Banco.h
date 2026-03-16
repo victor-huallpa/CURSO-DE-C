@@ -1,19 +1,19 @@
 #ifndef BANCO_H
 #define BANCO_H
-#include "Cuenta.h"
+#include <string>
+// #include "Cuenta.h"
 
 class Banco
 {
 private:
-    Cuenta cuenta[3];
+//atributos
+    int cuenta;
 public:
+///constructor
     Banco();
-
+//metodos
     void mostrarCuentas();
 };
-
-
-
 
 
 #endif
