@@ -17,7 +17,7 @@ int main(){
 
 int longitud(char *str){
     int cont = 0;
-    while (*(str+cont) != '\0')
+    while (*(str+cont) != '\0')//el final de un strin es '\0
     {
         cont += 1;
         // str++;
