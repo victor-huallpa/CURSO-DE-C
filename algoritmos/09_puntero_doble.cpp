@@ -10,10 +10,13 @@ int main(){
     cout << "El valor de val es: "<<*p<<endl;
     punteroD(&p);
     cout << "El nuevo valor de val es: "<<*p<<endl;
+    cout << "El nuevo valor de val es: "<<val<<endl;
 
     return 0;
 }
 
 void punteroD(int **p){
-    **p = 15;
+    static int newN = 15;
+    //cambiamos a donde apunta el puntero original
+    *p = &newN;
 }
