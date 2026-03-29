@@ -20,7 +20,7 @@ int main (){
         cout<<"\n";
         cout<<"El mayor de los tres numeros es: "<<mayor(&num[0])<<"\n"<<endl;
 
-        cout<<"Continuar? :\n1: no\n2: si:\n....";
+        cout<<"Continuar? :\n1: si\n2: no:\n....";
         cin>>conti;
 
         if (conti == 1)
@@ -49,10 +49,10 @@ void datos(int *n){
 
 int mayor(int *n){
 
-    if (*n > *(n+1) && *n > *(n+2))
+    if (*n >= *(n+1) && *n >= *(n+2))
     {
         return *n;    
-    }else if (*(n+1) > *n && *(n+1) > *(n+2) )
+    }else if (*(n+1) >= *n && *(n+1) >= *(n+2) )
     {
         return *(n+1);
     }else{
@@ -60,3 +60,14 @@ int mayor(int *n){
     }
     
 }
+
+//version simple
+
+// int mayor(int *n){
+//     int m = *n;
+
+//     if(*(n+1) > m ) m = *(n+1);
+//     if(*(n+2) > m ) m = *(n+2);
+
+//     return m;
+// }
