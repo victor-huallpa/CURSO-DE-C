@@ -17,5 +17,5 @@ int main (){
 }
 
 int anstrong(const string& numTex){
-
+    
 }
