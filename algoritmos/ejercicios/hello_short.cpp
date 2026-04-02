@@ -3,32 +3,38 @@
 
 using namespace std;
 
-void orden(char * word, int n);
 
 int main(){
 
     char words[10] = "ehlol";
     char hello[10] = "hello";
-    int cont = 0;
+    char temp;
+
+
     for (int i = 0; i < 5; i++)
     {
-        if (hello[cont] != words[i])
+        if (hello[i] != words[i])
         {
-            continue;
+            temp = words[i];
+            for (int j = i; j < 5; j++)
+            {
+                if (hello[i] == words[j])
+                {
+                    words[i] = words[j];
+                    words[j] = temp;
+                    break;
+                }
+                // cout<<words<<endl;
+                
+            }
+            
         }
-        orden(&words[i], cont);
-        i = 0;
-        cont++;
-
-           
+        
     }
+
+    cout<<words<<endl;
     
-
-
 
     return 0;
 }
 
-void orden(char * word, int n){
-    char pre = *word;
-}
