@@ -1,42 +1,18 @@
 {
-<<<<<<< HEAD
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug C++",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "preLaunchTask": "C/C++: g++.exe build active file"
-        }
-    ]
-=======
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "Debug C++ (Linux)",
       "type": "cppdbg",
       "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": [],
       "stopAtEntry": false,
+      "cwd": "${fileDirname}",
       "externalConsole": false,
-      "cwd": "/var/www/html/C/cursos/mates",
-      "program": "/var/www/html/C/cursos/mates/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build cpp"
     }
   ]
->>>>>>> 46a441062d082c3d98752efba27af7da20c90650
 }
