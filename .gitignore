@@ -1,0 +1,10 @@
+# Ejecutables (Linux)
+a.out
+*.out
+
+# Archivos objeto (compilación intermedia)
+*.o
+
+# Carpetas de compilación
+build/
+bin/
