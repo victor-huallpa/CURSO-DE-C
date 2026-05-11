@@ -1,10 +1,7 @@
-# Ejecutables (Linux)
-a.out
-*.out
-
-# Archivos objeto (compilación intermedia)
-*.o
-
-# Carpetas de compilación
-build/
-bin/
+# ignorar archivos sin extensión (PELIGROSO)
+* 
+!*.cpp
+!*.h
+!*.txt
+!*.md
+!.gitignore
