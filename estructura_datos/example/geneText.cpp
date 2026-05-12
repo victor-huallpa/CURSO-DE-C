@@ -7,15 +7,16 @@ int main(){
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dist(0, 25);
+    std::uniform_int_distribution<> dist2(1, 5);
 
     int numPa;
-    int numCarac = 5;
+    int numCarac;
 
     std::cout<<"Cuantas palabras qeuire generar: ";
     std::cin>>numPa;
 
-    std::cout<<"Cuantos caracteres cada palabra:";
-    std::cin>>numCarac;
+    // std::cout<<"Cuantos caracteres cada palabra:";
+    // std::cin>>numCarac;
 
     std::ofstream archi("lineas_text.txt");
 
@@ -24,16 +25,16 @@ int main(){
 
     for(int i = 0; i < numPa; i++){
         linea = "";
+        numCarac = dist2(gen);
+        // linea = "Linea " + std::to_string(i+1);
 
-        linea = "Linea " + std::to_string(i+1);
 
-
-        // for (int j = 0; j < numCarac; j++)
-        // {
-        //     int n = dist(gen);
-        //     char let = 'a' + n;
-        //     linea += let;
-        // }
+        for (int j = 0; j < numCarac; j++)
+        {
+            int n = dist(gen);
+            char let = 'a' + n;
+            linea += let;
+        }
         if (i == numPa-1)
         {
             archi << linea;
