@@ -1,5 +1,5 @@
 # ignorar archivos sin extensión (PELIGROSO)
-* 
+
 !*.cpp
 !*.h
 !*.txt
