@@ -19,17 +19,37 @@ int fibIter(int num){
     int tem = 1;
     int ini= 0;//representa primera iteracion
     int fin = 1;//representa segunda iteracion
+    int sig = -1;
+    int numM = num;
+
+    if (num < 0)
+    {
+        numM*=sig;
+    }
+    
 
     if (num == 1) return 0;
     if (num == 2) return ini + fin;
 
-    for (int  i = 2; i <= num; i++)
+
+    for (int  i = 2; i <= numM; i++)
     {
+
+        
         tem = fin;
         fin = ini + fin;
         ini = tem;
         
     }
+
+    if (num < 0)
+    {
+        if (num % 2 != 0)
+        {
+            fin*=sig;
+        }    
+    }
+
     return fin;
 
 }
