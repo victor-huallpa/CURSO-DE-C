@@ -39,7 +39,7 @@ int main(){
         lista.push_back(x);
     }
 
-    sort(lista.begin(), lista.end(), [](string a, string b){
+    sort(lista.begin(), lista.end(), [](const string& a, const string& b){
         if (a.size() != b.size()) return a.size() < b.size();
 
         return a<b;
