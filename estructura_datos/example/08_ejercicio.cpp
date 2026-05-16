@@ -8,7 +8,7 @@ int main(){
     queue<string> colaPa;
     queue<string> colaImpa;
     string linea;
-    int cont = 0;
+    int cont = 1;
 
     ifstream archi("lineas_text.txt");
 
@@ -16,13 +16,9 @@ int main(){
 
     while (getline(archi, linea))
     {
-        if (cont%2 == 0)
-        {
-            colaPa.push(linea);
-            continue;
-        }
-        colaImpa.push(linea);
-        
+        if (cont%2 == 0) colaPa.push(linea);
+        else  colaImpa.push(linea);
+        cont++;
     }
     
     for (int i = colaPa.size(); i> 0; i--)
@@ -30,10 +26,11 @@ int main(){
         cout<<colaPa.front()<<endl;
         colaPa.pop();
     }
+
     for (int i = colaImpa.size(); i> 0; i--)
     {
         cout<<colaImpa.front()<<endl;
-        colaPa.pop();
+        colaImpa.pop();
     }
     
 
