@@ -26,15 +26,15 @@ int main(){
     for(int i = 0; i < numPa; i++){
         linea = "";
         numCarac = dist2(gen);
-        // linea = "Linea " + std::to_string(i+1);
+        linea = "Linea " + std::to_string(i+1);
 
 
-        for (int j = 0; j < numCarac; j++)
-        {
-            int n = dist(gen);
-            char let = 'a' + n;
-            linea += let;
-        }
+        // for (int j = 0; j < numCarac; j++)
+        // {
+        //     int n = dist(gen);
+        //     char let = 'a' + n;
+        //     linea += let;
+        // }
         if (i == numPa-1)
         {
             archi << linea;
