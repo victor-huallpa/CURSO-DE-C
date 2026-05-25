@@ -1,0 +1,62 @@
+# Entorno virtual
+venv/
+.env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Flask / Instance
+instance/*
+!instance/.gitkeep
+
+# Migraciones cache
+migrations/__pycache__/
+
+# Base de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Archivos generados
+generated_qr/*
+latex/output/*
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Coverage / test
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Secrets
+.env
